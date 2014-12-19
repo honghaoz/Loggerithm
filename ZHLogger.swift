@@ -7,7 +7,7 @@
 
 import Foundation
 
-// Public
+// MARK: Public
 var logLevel = defaultDebugLevel
 var ZHLogShowDateTime: Bool = true
 var ZHLogShowLogLevel: Bool = true
@@ -15,6 +15,7 @@ var ZHLogShowFileName: Bool = true
 var ZHLogShowLineNumber: Bool = true
 var ZHLogShowFunctionName: Bool = true
 
+// MARK: Private
 enum ZHLogLevel: Int {
     case Off        = 0
     case Verbose    = 10
