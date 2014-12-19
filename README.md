@@ -1,6 +1,6 @@
 # ZHSwiftLogger
 
-ZHSwiftLogger is a simple log utility for Swift project. Just one file, you are good to go!
+A simple logging utility for Swift project. Just one file, you are good to go!
 
 ![](https://raw.githubusercontent.com/honghaoz/ZHSwiftLogger/master/Preview/Pre.png)
 
