@@ -7,7 +7,7 @@
 
 import Foundation
 
-// MARK: Public
+// Public
 var logLevel = defaultDebugLevel
 var ZHLogShowDateTime: Bool = true
 var ZHLogShowLogLevel: Bool = true
@@ -15,7 +15,6 @@ var ZHLogShowFileName: Bool = true
 var ZHLogShowLineNumber: Bool = true
 var ZHLogShowFunctionName: Bool = true
 
-// MARK: Private
 enum ZHLogLevel: Int {
     case Off        = 0
     case Verbose    = 10
@@ -36,12 +35,12 @@ enum ZHLogLevel: Int {
     }
 }
 
-// Be sure to set the "DEBUG" symbol. 
+// Be sure to set the "DEBUG" symbol.
 // Set it in the "Swift Compiler - Custom Flags" section, "Other Swift Flags" line. You add the DEBUG symbol with the -D DEBUG entry.
 #if DEBUG
     let defaultDebugLevel = ZHLogLevel.Verbose
-#else
-    let defaultDebugLevel = ZHLogLevel.Warning
+    #else
+let defaultDebugLevel = ZHLogLevel.Warning
 #endif
 
 var _ZHLogDateFormatter: NSDateFormatter?
@@ -56,11 +55,11 @@ var ZHLogDateFormatter: NSDateFormatter {
 
 // Default
 #if DEBUG
-    var ZHLogFunc: (String) -> Void = println
+    var ZHLogFunc: (format: String) -> Void = println
     var ZHLogUsingNSLog: Bool = false
-#else
-    var ZHLogFunc: (format: String, args: CVarArgType...) -> Void = NSLog
-    var ZHLogUsingNSLog: Bool = true
+    #else
+var ZHLogFunc: (format: String, args: CVarArgType...) -> Void = NSLog
+var ZHLogUsingNSLog: Bool = true
 #endif
 
 func logVerbose(_ logText: String = "",
@@ -132,5 +131,5 @@ private func log(level: ZHLogLevel, file: String = __FILE__, var function: Strin
     if !ZHLogShowFunctionName { function = "" }
     let message = NSString(format: format, arguments: args) as String
     let logText = "\(time)\(level)\(fileLine)\(function): \(message)"
-    ZHLogFunc(logText)
+    ZHLogFunc(format: logText)
 }
