@@ -16,13 +16,13 @@ var ZHLogShowLineNumber: Bool = true
 var ZHLogShowFunctionName: Bool = true
 
 enum ZHLogLevel: Int {
-    case Off        = 0
+    case All        = 0
     case Verbose    = 10
     case Debug      = 20
     case Info       = 30
     case Warning    = 40
     case Error      = 50
-    case All        = 60
+    case Off        = 60
     static func logLevelString(logLevel: ZHLogLevel) -> String {
         switch logLevel {
         case .Verbose: return "Verbose"
@@ -38,7 +38,7 @@ enum ZHLogLevel: Int {
 // Be sure to set the "DEBUG" symbol.
 // Set it in the "Swift Compiler - Custom Flags" section, "Other Swift Flags" line. You add the DEBUG symbol with the -D DEBUG entry.
 #if DEBUG
-    let defaultDebugLevel = ZHLogLevel.Verbose
+    let defaultDebugLevel = ZHLogLevel.All
     #else
 let defaultDebugLevel = ZHLogLevel.Warning
 #endif
@@ -131,5 +131,6 @@ private func log(level: ZHLogLevel, file: String = __FILE__, var function: Strin
     if !ZHLogShowFunctionName { function = "" }
     let message = NSString(format: format, arguments: args) as String
     let logText = "\(time)\(level)\(fileLine)\(function): \(message)"
+    
     ZHLogFunc(format: logText)
 }
