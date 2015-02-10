@@ -30,7 +30,7 @@ And this logging utility is simple and very handy to use.
   - In "Swift Compiler - Custom Flags" section, "Other Swift Flags" line, add `-D DEBUG`
 ![](https://raw.githubusercontent.com/honghaoz/ZHSwiftLogger/master/Preview/debugSetting.png)
 
-# Useage
+# Usage
 
 ### Basic 
 ```
