@@ -40,26 +40,26 @@ enum ZHLogLevel: Int {
 #if DEBUG
     let defaultDebugLevel = ZHLogLevel.All
     #else
-let defaultDebugLevel = ZHLogLevel.Warning
+    let defaultDebugLevel = ZHLogLevel.Warning
 #endif
 
 var _ZHLogDateFormatter: NSDateFormatter?
-var ZHLogDateFormatter: NSDateFormatter {
+var ZHLogDateFormatter: NSDateFormatter = {
     if _ZHLogDateFormatter == nil {
         _ZHLogDateFormatter = NSDateFormatter()
         _ZHLogDateFormatter!.locale = NSLocale(localeIdentifier: "en_US_POSIX") //24H
         _ZHLogDateFormatter!.dateFormat = "y-MM-dd HH:mm:ss.SSS"
     }
     return _ZHLogDateFormatter!
-}
+}()
 
 // Default
 #if DEBUG
     var ZHLogFunc: (format: String) -> Void = println
     var ZHLogUsingNSLog: Bool = false
     #else
-var ZHLogFunc: (format: String, args: CVarArgType...) -> Void = NSLog
-var ZHLogUsingNSLog: Bool = true
+    var ZHLogFunc: (format: String, args: CVarArgType...) -> Void = NSLog
+    var ZHLogUsingNSLog: Bool = true
 #endif
 
 func logVerbose(_ logText: String = "",

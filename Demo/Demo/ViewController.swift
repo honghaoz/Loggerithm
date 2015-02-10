@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         ZHLogShowDateTime = false
         logInfo("Now not date time is logged out")
         logError("I can use format: %d + %d = %d", args: 1, 1, 2)
-        logInfo("Not turn off all")
+        logInfo("Now turn off all")
         ZHLogShowFileName = false
         ZHLogShowLineNumber = false
         ZHLogShowFunctionName = false
