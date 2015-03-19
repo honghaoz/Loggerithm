@@ -132,5 +132,7 @@ private func log(level: ZHLogLevel, file: String = __FILE__, var function: Strin
     let message = NSString(format: format, arguments: args) as String
     let logText = "\(time)\(level)\(fileLine)\(function): \(message)"
     
-    ZHLogFunc(format: logText)
+    dispatch_async(dispatch_get_main_queue(), { () -> Void in
+        ZHLogFunc(format: logText)
+    })
 }
