@@ -117,6 +117,18 @@ func logError(_ logText: String = "",
     }
 }
 
+func logWithLevel(level: ZHLogLevel,
+    _ logText: String = "",
+    file: String = __FILE__,
+    line: UWord = __LINE__,
+    function: String = __FUNCTION__,
+    #args: CVarArgType...)
+{
+    if level.rawValue >= logLevel.rawValue {
+        log(level, file: file, function: function, line: line, logText, args: getVaList(args))
+    }
+}
+
 private func log(level: ZHLogLevel, file: String = __FILE__, var function: String = __FUNCTION__, line: UWord = __LINE__, format: String, #args: CVaListPointer) {
     let time: String = ZHLogShowDateTime ? (ZHLogUsingNSLog ? "" : "\(ZHLogDateFormatter.stringFromDate(NSDate())) ") : ""
     let level: String = ZHLogShowLogLevel ? "[\(ZHLogLevel.logLevelString(level))] " : ""
