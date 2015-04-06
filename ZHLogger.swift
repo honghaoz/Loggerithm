@@ -31,6 +31,7 @@ enum ZHLogLevel: Int {
         case .Warning: return "Warning"
         case .Error: return "Error"
         default: assertionFailure("Invalid level to get string")
+            return "Error"
         }
     }
 }
