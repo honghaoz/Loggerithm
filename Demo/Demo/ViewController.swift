@@ -12,19 +12,38 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        logVerbose()
-        logVerbose("This is verbose message")
-        logDebug("This is debug message")
-        logVerbose("Turn off DateTime")
-        ZHLogShowDateTime = false
-        logInfo("Now not date time is logged out")
-        logError("I can use format: %d + %d = %d", args: 1, 1, 2)
-        logInfo("Now turn off all")
-        ZHLogShowFileName = false
-        ZHLogShowLineNumber = false
-        ZHLogShowFunctionName = false
-        logWarning("This is a warning")
+		
+        log.verbose("Verbose message...")
+		log.debug("Debug message...")
+		log.info("Info message...")
+		log.warning("Warning message...")
+		log.error("Error message...")
+		
+		log.emptyLine()
+        log.showDateTime = false
+        log.info("date time is turned off.")
+		
+		log.showLineNumber = false
+		log.info("Line number is turned off.")
+		
+		log.showFileName = false
+		log.info("File name is turned off.")
+		
+		log.showFunctionName = false
+		log.info("Function name is turned off.")
+		
+		log.showLogLevel = false
+		log.info("Log level is turned off.")
+		
+		log.emptyLine()
+		log.info("Restore to full format...")
+		
+		log.showDateTime = true
+		log.showLogLevel = true
+		log.showFileName = true
+		log.showLineNumber = true
+		log.showFunctionName = true
+		
+        log.verbose("I can use format: %d + %d = %d", args: 1, 1, 2)
     }
 }
-

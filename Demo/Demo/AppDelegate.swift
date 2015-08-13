@@ -7,6 +7,7 @@
 //
 
 import UIKit
+var log = Logarithm()
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

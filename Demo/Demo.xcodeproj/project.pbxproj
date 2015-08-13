@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E43926081B7D2FC400616CDE /* Logarithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43926061B7D2FC400616CDE /* Logarithm.swift */; };
+		E43926091B7D2FC400616CDE /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43926071B7D2FC400616CDE /* Type.swift */; };
 		FA3CB48E1A38F4230088F488 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3CB48D1A38F4230088F488 /* AppDelegate.swift */; };
 		FA3CB4901A38F4230088F488 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3CB48F1A38F4230088F488 /* ViewController.swift */; };
 		FA3CB4931A38F4230088F488 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3CB4911A38F4230088F488 /* Main.storyboard */; };
 		FA3CB4951A38F4230088F488 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA3CB4941A38F4230088F488 /* Images.xcassets */; };
 		FA3CB4981A38F4230088F488 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA3CB4961A38F4230088F488 /* LaunchScreen.xib */; };
 		FA3CB4A41A38F4230088F488 /* DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3CB4A31A38F4230088F488 /* DemoTests.swift */; };
-		FA3CB4AE1A38F4300088F488 /* ZHLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3CB4AD1A38F4300088F488 /* ZHLogger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E43926061B7D2FC400616CDE /* Logarithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logarithm.swift; sourceTree = "<group>"; };
+		E43926071B7D2FC400616CDE /* Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
 		FA3CB4881A38F4230088F488 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA3CB48C1A38F4230088F488 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA3CB48D1A38F4230088F488 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -37,7 +40,6 @@
 		FA3CB49D1A38F4230088F488 /* DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA3CB4A21A38F4230088F488 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA3CB4A31A38F4230088F488 /* DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTests.swift; sourceTree = "<group>"; };
-		FA3CB4AD1A38F4300088F488 /* ZHLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZHLogger.swift; path = ../../ZHLogger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +60,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E43926051B7D2FC400616CDE /* Logarithm */ = {
+			isa = PBXGroup;
+			children = (
+				E43926061B7D2FC400616CDE /* Logarithm.swift */,
+				E43926071B7D2FC400616CDE /* Type.swift */,
+			);
+			name = Logarithm;
+			path = ../Logarithm;
+			sourceTree = "<group>";
+		};
 		FA3CB47F1A38F4230088F488 = {
 			isa = PBXGroup;
 			children = (
+				E43926051B7D2FC400616CDE /* Logarithm */,
 				FA3CB48A1A38F4230088F488 /* Demo */,
 				FA3CB4A01A38F4230088F488 /* DemoTests */,
 				FA3CB4891A38F4230088F488 /* Products */,
@@ -79,7 +92,6 @@
 		FA3CB48A1A38F4230088F488 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				FA3CB4AD1A38F4300088F488 /* ZHLogger.swift */,
 				FA3CB48D1A38F4230088F488 /* AppDelegate.swift */,
 				FA3CB48F1A38F4230088F488 /* ViewController.swift */,
 				FA3CB4911A38F4230088F488 /* Main.storyboard */,
@@ -216,8 +228,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA3CB4901A38F4230088F488 /* ViewController.swift in Sources */,
-				FA3CB4AE1A38F4300088F488 /* ZHLogger.swift in Sources */,
 				FA3CB48E1A38F4230088F488 /* AppDelegate.swift in Sources */,
+				E43926081B7D2FC400616CDE /* Logarithm.swift in Sources */,
+				E43926091B7D2FC400616CDE /* Type.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +387,7 @@
 				);
 				INFOPLIST_FILE = DemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Demo.app/Demo";
 			};
@@ -389,6 +403,7 @@
 				);
 				INFOPLIST_FILE = DemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Demo.app/Demo";
 			};
@@ -413,6 +428,7 @@
 				FA3CB4A91A38F4230088F488 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA3CB4AA1A38F4230088F488 /* Build configuration list for PBXNativeTarget "DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +437,7 @@
 				FA3CB4AC1A38F4230088F488 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
