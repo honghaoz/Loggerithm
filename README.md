@@ -22,7 +22,22 @@ And **Loggerithm** is clear and very handy to use.
 
 ### Cocoapods
 
-TODO
+[CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects.
+
+To integrate **Loggerithm** into your Xcode project using CocoaPods, specify it in your `Podfile`:
+
+```ruby
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+pod 'Loggerithm', '~> 1.0'
+```
+
+Then, run the following command:
+
+```bash
+$ pod install
+```
 
 ### Manually
 - Add Swift files in **Source** folder into your project
@@ -38,6 +53,11 @@ TODO
 ## Usage
 
 ### Basic 
+> If you are using Cocoapods to integrate Loggerithm. Import Loggerithm first:
+> ```swift
+> import Loggerithm
+> ```
+
 ```swift
 var log = Loggerithm()
 
