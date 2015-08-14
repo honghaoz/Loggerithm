@@ -18,6 +18,13 @@ However, the problems are:
 
 And **Loggerithm** is clear and very handy to use.
 
+## Features
+- [x] Use `println` in Debug and `NSLog` in Production
+- [x] Formatted output, just like `NSLog`
+- [x] Log level Support.
+- [x] Colorful output and color customization
+- [x] Comprehensive Unit Test Coverage
+
 ## Installation
 
 ### Cocoapods
