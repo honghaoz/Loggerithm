@@ -37,7 +37,7 @@ To integrate **Loggerithm** into your Xcode project using CocoaPods, specify it 
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
-pod 'Loggerithm', '~> 1.1'
+pod 'Loggerithm', '~> 1.2'
 ```
 
 Then, run the following command:
@@ -156,7 +156,7 @@ Results:
 
 ```swift
 var log = Loggerithm()
-log.verboseWithFormat("I can use format: %d + %d = %d", args: 1, 1, 2)
+log.verbose("I can use format: %d + %d = %d", args: 1, 1, 2)
 ```
 
 Results:
