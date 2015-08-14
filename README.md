@@ -69,11 +69,13 @@ Need [XcodeColors](https://github.com/robbiehanson/XcodeColors) plugin installed
 - Or use [Alcatraz](http://alcatraz.io) to install it
 
 #### Setup Environment Variable
-To let logger automatically turn on, you need to add `"XcodeColors" = "YES"` environment variable to your build scheme.
+Once XcodeColors is installed and loaded properly. To let logger automatically turn on, you need to add `"XcodeColors" = "YES"` environment variable to your build scheme.
 
 This can be done in following way:
-![](https://raw.githubusercontent.com/honghaoz/Loggerithm/master/Assets/scheme-select.png)
-![](https://raw.githubusercontent.com/honghaoz/Loggerithm/master/Assets/environment.png)
+- Under target selection, click **Edit Scheme...**
+- ![](https://raw.githubusercontent.com/honghaoz/Loggerithm/master/Assets/scheme-select.png)
+- Under **Arguments** tab, in **Environment Variables**, hit **+** to add a new environment variable with name "XcodeColors" and value "YES".
+- ![](https://raw.githubusercontent.com/honghaoz/Loggerithm/master/Assets/environment.png)
 
 You can also manually force to turn on/off colorful output by modifying `useColorfulLog` property
 
