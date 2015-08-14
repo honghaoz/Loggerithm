@@ -33,7 +33,7 @@ TODO
   - Go to `Build Settings`
   - Search `Swift`
   - Under **Swift Compiler - Custom Flags** section, in **Other Swift Flags** line, add `-D DEBUG`
-![](https://raw.githubusercontent.com/honghaoz/ZHSwiftLogger/master/Preview/debugSetting.png)
+![](https://raw.githubusercontent.com/honghaoz/ZHSwiftLogger/master/Assets/settings.png)
 
 ## Usage
 
@@ -50,13 +50,7 @@ log.error("Error message...")
 ```
 
 Results:
-<div style="width: 125%; background-color: #2B3644; font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;">
-<span style="color: #CACACA; font-size: 14px">2015-08-13 23:26:24.500 [Verbose] [ViewController.swift:30] viewDidLoad(): Verbose message...</span><br/>
-<span style="color: #4DB1D4; font-size: 14px">2015-08-13 23:26:24.501 [Debug] [ViewController.swift:31] viewDidLoad(): Debug message...</span><br/>
-<span style="color: #F6C703; font-size: 14px">2015-08-13 23:26:24.501 [Info] [ViewController.swift:32] viewDidLoad(): Info message...</span><br/>
-<span style="color: #F18E16; font-size: 14px">2015-08-13 23:26:24.501 [Warning] [ViewController.swift:33] viewDidLoad(): Warning message...</span><br/>
-<span style="color: #EC2B1D; font-size: 14px">2015-08-13 23:26:24.501 [Error] [ViewController.swift:34] viewDidLoad(): Error message...</span><br/>
-</div>
+![](https://raw.githubusercontent.com/honghaoz/ZHSwiftLogger/master/Assets/basic.png)
 
 ### Log Levels
 
@@ -83,7 +77,7 @@ Logging with level lower than `logLevel` will be ignored.
 
 #### Format
 
-Log string containts 5 fields, formart is:
+Log string containts 5 fields, format is:
 
 > `y-MM-dd HH:mm:ss.SSS [LogLevel] [FileName:LineNumber] functionName: message`
 
@@ -111,13 +105,7 @@ log.info("Restoring to full format...")
 ```
 
 Results:
-<div style="width: 125%; background-color: #2B3644; font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;">
-<span style="color: #F6C703; font-size: 14px">[Info] [ViewController.swift:38] viewDidLoad(): date time is turned off.</span><br/>
-<span style="color: #F6C703; font-size: 14px">[Info] [ViewController.swift] viewDidLoad(): Line number is turned off.</span><br/>
-<span style="color: #F6C703; font-size: 14px">[Info] viewDidLoad(): File name is turned off.</span><br/>
-<span style="color: #F6C703; font-size: 14px">[Info]: Function name is turned off.</span><br/>
-<span style="color: #F6C703; font-size: 14px">Log level is turned off.</span><br/>
-</div>
+![](https://raw.githubusercontent.com/honghaoz/ZHSwiftLogger/master/Assets/fields.png)
 
 #### Formatted Output
 
@@ -127,9 +115,7 @@ log.verboseWithFormat("I can use format: %d + %d = %d", args: 1, 1, 2)
 ```
 
 Results:
-<div style="width: 125%; background-color: #2B3644; font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;">
-<span style="color: #F6C703; font-size: 14px">[Info]: I can use format: 1 + 1 = 2</span><br/>
-</div>
+![](https://raw.githubusercontent.com/honghaoz/ZHSwiftLogger/master/Assets/formatted.png)
 
 ### Color Customization
 
@@ -151,13 +137,7 @@ log.error("Error message...")
 ```
 
 Results:
-<div style="width: 125%; background-color: #2B3644; font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;">
-<span style="color: #919191; font-size: 14px">2015-08-13 23:26:24.500 [Verbose] [ViewController.swift:30] viewDidLoad(): Verbose message...</span><br/>
-<span style="color: #69F900; font-size: 14px">2015-08-13 23:26:24.501 [Debug] [ViewController.swift:31] viewDidLoad(): Debug message...</span><br/>
-<span style="color: #FDFB00; font-size: 14px">2015-08-13 23:26:24.501 [Info] [ViewController.swift:32] viewDidLoad(): Info message...</span><br/>
-<span style="color: #F08C1E; font-size: 14px">2015-08-13 23:26:24.501 [Warning] [ViewController.swift:33] viewDidLoad(): Warning message...</span><br/>
-<span style="color: #EC2B00; font-size: 14px">2015-08-13 23:26:24.501 [Error] [ViewController.swift:34] viewDidLoad(): Error message...</span><br/>
-</div>
+![](https://raw.githubusercontent.com/honghaoz/ZHSwiftLogger/master/Assets/color.png)
 
 
 ## Advantages
