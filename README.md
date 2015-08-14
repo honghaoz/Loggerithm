@@ -171,12 +171,9 @@ log.error("Error message...")
 Results:
 ![](https://raw.githubusercontent.com/honghaoz/Loggerithm/master/Assets/color.png)
 
+## TODO
 
-## Advantages
-
-**Loggerithm** will use `println()` for development and use `NSLog()` for production.
-
-This will be faster when debugging and still have log information for production.
+- [ ] Log into file
 
 ## The MIT License (MIT)
 The MIT License (MIT)
