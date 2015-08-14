@@ -1,4 +1,8 @@
 # Loggerithm
+[![CI Status](http://img.shields.io/travis/honghaoz/Ji.svg?style=flat)](https://travis-ci.org/honghaoz/Loggerithm)
+[![Cocoapods Version](https://img.shields.io/cocoapods/v/Ji.svg?style=flat)](http://cocoapods.org/pods/Loggerithm)
+[![License](https://img.shields.io/cocoapods/l/Ji.svg?style=flat)](http://cocoapods.org/pods/Loggerithm)
+[![Platform](https://img.shields.io/cocoapods/p/Ji.svg?style=flat)](http://cocoapods.org/pods/Loggerithm)
 
 A lightweight Swift logger, uses `println` in Debug and `NSLog` in Production with colourful output.
 
