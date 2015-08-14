@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E43926081B7D2FC400616CDE /* Logarithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43926061B7D2FC400616CDE /* Logarithm.swift */; };
+		E43926081B7D2FC400616CDE /* Loggerithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43926061B7D2FC400616CDE /* Loggerithm.swift */; };
 		E43926091B7D2FC400616CDE /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43926071B7D2FC400616CDE /* Type.swift */; };
 		FA3CB48E1A38F4230088F488 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3CB48D1A38F4230088F488 /* AppDelegate.swift */; };
 		FA3CB4901A38F4230088F488 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3CB48F1A38F4230088F488 /* ViewController.swift */; };
@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E43926061B7D2FC400616CDE /* Logarithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logarithm.swift; sourceTree = "<group>"; };
+		E43926061B7D2FC400616CDE /* Loggerithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loggerithm.swift; sourceTree = "<group>"; };
 		E43926071B7D2FC400616CDE /* Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
 		FA3CB4881A38F4230088F488 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA3CB48C1A38F4230088F488 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,7 +63,7 @@
 		E43926051B7D2FC400616CDE /* Logarithm */ = {
 			isa = PBXGroup;
 			children = (
-				E43926061B7D2FC400616CDE /* Logarithm.swift */,
+				E43926061B7D2FC400616CDE /* Loggerithm.swift */,
 				E43926071B7D2FC400616CDE /* Type.swift */,
 			);
 			name = Logarithm;
@@ -229,7 +229,7 @@
 			files = (
 				FA3CB4901A38F4230088F488 /* ViewController.swift in Sources */,
 				FA3CB48E1A38F4230088F488 /* AppDelegate.swift in Sources */,
-				E43926081B7D2FC400616CDE /* Logarithm.swift in Sources */,
+				E43926081B7D2FC400616CDE /* Loggerithm.swift in Sources */,
 				E43926091B7D2FC400616CDE /* Type.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

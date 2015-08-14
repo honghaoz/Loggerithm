@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 		
+		// Logger is setup in AppDelegate.swift
+		
         log.verbose("Verbose message...")
 		log.debug("Debug message...")
 		log.info("Info message...")

@@ -1,5 +1,5 @@
 //
-//  Logarithm.swift
+//  Loggerithm.swift
 //
 //  Created by Honghao Zhang on 2014-12-10.
 //  Copyright (c) 2014 HonghaoZ. All rights reserved.
@@ -7,8 +7,8 @@
 
 import Foundation
 
-public struct Logarithm {
-	public static let defaultLogger = Logarithm()
+public struct Loggerithm {
+	public static let defaultLogger = Loggerithm()
 	
 	public var logLevel = LogLevel.defaultLevel
 	

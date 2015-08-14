@@ -1,6 +1,5 @@
 //
 //  Type.swift
-//  Demo
 //
 //  Created by Honghao Zhang on 2015-08-13.
 //  Copyright (c) 2015 HonghaoZ. All rights reserved.

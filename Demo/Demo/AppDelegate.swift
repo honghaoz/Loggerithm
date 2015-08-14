@@ -7,7 +7,9 @@
 //
 
 import UIKit
-var log = Logarithm()
+
+// Setup a logger as a global variable
+var log = Loggerithm()
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

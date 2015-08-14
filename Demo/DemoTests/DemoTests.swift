@@ -11,7 +11,7 @@ import XCTest
 import Demo
 
 class DemoTests: XCTestCase {
-	var log = Logarithm()
+	var log = Loggerithm()
 	let dateFormatter = NSDateFormatter()
 	
     override func setUp() {
