@@ -80,7 +80,7 @@ class DemoTests: XCTestCase {
 	}
 	
 	func testFullFormatErrorFormated() {
-		var logString = log.errorWithFormat("Error String, errorCode: %d", args: -100), lineNumber = __LINE__
+		var logString = log.error("Error String, errorCode: %d", args: -100), lineNumber = __LINE__
 		logString = replaceSecondsAndMilliSeconds(logString!)
 		
 		let expectedString = "\(dateFormatter.stringFromDate(NSDate())) [Error] [DemoTests.swift:\(lineNumber)] testFullFormatErrorFormated(): Error String, errorCode: -100"
