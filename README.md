@@ -63,8 +63,19 @@ $ pod install
 
 ### Colorful Output Support
 Need [XcodeColors](https://github.com/robbiehanson/XcodeColors) plugin installed.
+
+#### XcodeColors Installation
 - You can fork [XcodeColors](https://github.com/robbiehanson/XcodeColors) repo and build to install it.
 - Or use [Alcatraz](http://alcatraz.io) to install it
+
+#### Setup Environment Variable
+To let logger automatically turn on, you need to add `"XcodeColors" = "YES"` environment variable to your build scheme.
+
+This can be done in following way:
+![](https://raw.githubusercontent.com/honghaoz/Loggerithm/master/Assets/schele-select.png)
+![](https://raw.githubusercontent.com/honghaoz/Loggerithm/master/Assets/environment.png)
+
+You can also manually force to turn on/off colorful output by modifying `useColorfulLog` property
 
 ## Usage
 

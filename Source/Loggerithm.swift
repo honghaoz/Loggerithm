@@ -18,6 +18,8 @@ public struct Loggerithm {
     public var showLineNumber = true
     public var showFunctionName = true
     
+    public var useColorfulLog = false
+    
     public var verboseColor: Color? {
         set {
             LoggerColor.verboseColor = newValue
@@ -81,6 +83,12 @@ public struct Loggerithm {
     public init() {
         dateFormatter.locale = NSLocale(localeIdentifier: "en_US_POSIX") //24H
         dateFormatter.dateFormat = "y-MM-dd HH:mm:ss.SSS"
+        
+        // Check to see whether XcodeColors is installed and enabled
+        // useColorfulLog will be turned on when environment variable "XcodeColors" == "YES"
+        if let xcodeColorsEnabled = NSProcessInfo().environment["XcodeColors"] as? String where xcodeColorsEnabled == "YES" {
+            useColorfulLog = true
+        }
     }
     
     public func emptyLine() {
@@ -196,10 +204,10 @@ public struct Loggerithm {
         let infoString = "\(dateTime)\(levelString)\(fileLine)\(functionString)".stringByTrimmingCharactersInSet(NSCharacterSet(charactersInString: " "))
         
         let logString = infoString + (infoString.isEmpty ? "" : ": ") + "\(message)"
-        let colorLogString = LoggerColor.applyColorForLogString(logString, withLevel: level)
+        let outputString = useColorfulLog ? LoggerColor.applyColorForLogString(logString, withLevel: level) : logString
         
         dispatch_async(dispatch_get_main_queue(), { () -> Void in
-            self.LogFunction(format: colorLogString)
+            self.LogFunction(format: outputString)
         })
         
         return logString

@@ -62,6 +62,12 @@ class ViewController: UIViewController {
 		
 		// Customize Color
 		cleanLogger.emptyLine()
+		log.useColorfulLog = false
+		log.info("Color is turned off.")
+		log.useColorfulLog = true
+		log.info("Color is turned on.")
+		
+		cleanLogger.emptyLine()
 		cleanLogger.info("Customizing color...")
 		log.verboseColor = UIColor.grayColor()
 		log.debugColor = UIColor.greenColor()
