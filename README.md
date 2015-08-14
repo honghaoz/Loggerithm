@@ -10,17 +10,13 @@ A lightweight Swift logger, uses `println` in Debug and `NSLog` in Production wi
 
 ## Why
 
-There's a lot of great libraries for logging, like [CocoaLumberjack](https://github.com/CocoaLumberjack/CocoaLumberjack),
-[XCGLogger](https://github.com/DaveWoodCom/XCGLogger),
-[Swell](https://github.com/hubertr/Swell)
+In Swift, we usually use `println` to log information into console. However, it doesn't log anything in production version. 
 
-However, the problems are:
+Thus we want to use `NSLog` in production but still want the efficiency of `println` in development. (`println` is faster than `NSLog`, since `println` is not actually logging).
 
-- CocoaLumberjack is not for Swift and it's not lightweight
+This project started more than half a year ago, named [ZHSwiftLogger](https://github.com/honghaoz/ZHSwiftLogger). At that time, no other Swift loggers provide this functionality. So I developped this logger for my personal usage.
 
-- XCGLogger and Swell are only using `println()`, which is efficient for debugging but not actually logging anything (In production, we still need `NSLog` to log out informations)
-
-And **Loggerithm** is clear and very handy to use.
+Nowadays, we have more and more great Swift loggers. While, **Loggerithm** is lightweight, pretty straightforward and handy to use.
 
 ## Features
 - [x] Use `println` in Debug and `NSLog` in Production.
