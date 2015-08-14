@@ -29,9 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E43926061B7D2FC400616CDE /* Loggerithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loggerithm.swift; sourceTree = "<group>"; usesTabs = 0; };
-		E43926071B7D2FC400616CDE /* Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; usesTabs = 0; };
-		E45C86B51B7D8DDD002A3A49 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; usesTabs = 0; };
+		E43926061B7D2FC400616CDE /* Loggerithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Loggerithm.swift; path = ../Source/Loggerithm.swift; sourceTree = "<group>"; usesTabs = 0; };
+		E43926071B7D2FC400616CDE /* Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Type.swift; path = ../Source/Type.swift; sourceTree = "<group>"; usesTabs = 0; };
+		E45C86B51B7D8DDD002A3A49 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Color.swift; path = ../Source/Color.swift; sourceTree = "<group>"; usesTabs = 0; };
 		FA3CB4881A38F4230088F488 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA3CB48C1A38F4230088F488 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA3CB48D1A38F4230088F488 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,21 +62,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E43926051B7D2FC400616CDE /* Logarithm */ = {
+		E43926051B7D2FC400616CDE /* Loggerithm */ = {
 			isa = PBXGroup;
 			children = (
 				E43926061B7D2FC400616CDE /* Loggerithm.swift */,
 				E43926071B7D2FC400616CDE /* Type.swift */,
 				E45C86B51B7D8DDD002A3A49 /* Color.swift */,
 			);
-			name = Logarithm;
-			path = ../Logarithm;
+			name = Loggerithm;
+			path = ../Loggerithm;
 			sourceTree = "<group>";
 		};
 		FA3CB47F1A38F4230088F488 = {
 			isa = PBXGroup;
 			children = (
-				E43926051B7D2FC400616CDE /* Logarithm */,
+				E43926051B7D2FC400616CDE /* Loggerithm */,
 				FA3CB48A1A38F4230088F488 /* Demo */,
 				FA3CB4A01A38F4230088F488 /* DemoTests */,
 				FA3CB4891A38F4230088F488 /* Products */,
