@@ -2,7 +2,7 @@
 
 A lightweight Swift logger, uses `println` in Debug and `NSLog` in Production with colourful output.
 
-![](https://raw.githubusercontent.com/honghaoz/ZHSwiftLogger/master/Assets/demo.png)
+![](https://raw.githubusercontent.com/honghaoz/Loggerithm/master/Assets/demo.png)
 
 ## Why
 
@@ -33,7 +33,7 @@ TODO
   - Go to `Build Settings`
   - Search `Swift`
   - Under **Swift Compiler - Custom Flags** section, in **Other Swift Flags** line, add `-D DEBUG`
-![](https://raw.githubusercontent.com/honghaoz/ZHSwiftLogger/master/Assets/settings.png)
+![](https://raw.githubusercontent.com/honghaoz/Loggerithm/master/Assets/settings.png)
 
 ## Usage
 
@@ -50,7 +50,7 @@ log.error("Error message...")
 ```
 
 Results:
-![](https://raw.githubusercontent.com/honghaoz/ZHSwiftLogger/master/Assets/basic.png)
+![](https://raw.githubusercontent.com/honghaoz/Loggerithm/master/Assets/basic.png)
 
 ### Log Levels
 
@@ -105,7 +105,7 @@ log.info("Restoring to full format...")
 ```
 
 Results:
-![](https://raw.githubusercontent.com/honghaoz/ZHSwiftLogger/master/Assets/fields.png)
+![](https://raw.githubusercontent.com/honghaoz/Loggerithm/master/Assets/fields.png)
 
 #### Formatted Output
 
@@ -115,7 +115,7 @@ log.verboseWithFormat("I can use format: %d + %d = %d", args: 1, 1, 2)
 ```
 
 Results:
-![](https://raw.githubusercontent.com/honghaoz/ZHSwiftLogger/master/Assets/formatted.png)
+![](https://raw.githubusercontent.com/honghaoz/Loggerithm/master/Assets/formatted.png)
 
 ### Color Customization
 
@@ -137,7 +137,7 @@ log.error("Error message...")
 ```
 
 Results:
-![](https://raw.githubusercontent.com/honghaoz/ZHSwiftLogger/master/Assets/color.png)
+![](https://raw.githubusercontent.com/honghaoz/Loggerithm/master/Assets/color.png)
 
 
 ## Advantages
