@@ -19,11 +19,11 @@ However, the problems are:
 And **Loggerithm** is clear and very handy to use.
 
 ## Features
-- [x] Use `println` in Debug and `NSLog` in Production
-- [x] Formatted output, just like `NSLog`
+- [x] Use `println` in Debug and `NSLog` in Production.
+- [x] Formatted output, just like `NSLog`.
 - [x] Log level Support.
-- [x] Colorful output and color customization
-- [x] Comprehensive Unit Test Coverage
+- [x] Colorful output and color customization.
+- [x] Comprehensive Unit Test Coverage.
 
 ## Installation
 
@@ -56,6 +56,11 @@ $ pod install
   - Search `Swift`
   - Under **Swift Compiler - Custom Flags** section, in **Other Swift Flags** line, add `-D DEBUG`
 ![](https://raw.githubusercontent.com/honghaoz/Loggerithm/master/Assets/settings.png)
+
+### Colorful Output Support
+Need [XcodeColors](https://github.com/robbiehanson/XcodeColors) plugin installed.
+- You can fork [XcodeColors](https://github.com/robbiehanson/XcodeColors) repo and build to install it.
+- Or use [Alcatraz](http://alcatraz.io) to install it
 
 ## Usage
 
