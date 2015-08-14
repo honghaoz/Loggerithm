@@ -79,11 +79,11 @@ class DemoTests: XCTestCase {
 		XCTAssertEqual(logString!, expectedString)
 	}
 	
-	func testFullFormatError() {
-		var logString = log.error("Error String, errorCode: %d", args: -100), lineNumber = __LINE__
+	func testFullFormatErrorFormated() {
+		var logString = log.errorWithFormat("Error String, errorCode: %d", args: -100), lineNumber = __LINE__
 		logString = replaceSecondsAndMilliSeconds(logString!)
 		
-		let expectedString = "\(dateFormatter.stringFromDate(NSDate())) [Error] [DemoTests.swift:\(lineNumber)] testFullFormatError(): Error String, errorCode: -100"
+		let expectedString = "\(dateFormatter.stringFromDate(NSDate())) [Error] [DemoTests.swift:\(lineNumber)] testFullFormatErrorFormated(): Error String, errorCode: -100"
 		XCTAssertEqual(logString!, expectedString)
 	}
 	

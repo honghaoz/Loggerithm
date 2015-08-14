@@ -44,6 +44,6 @@ class ViewController: UIViewController {
 		log.showLineNumber = true
 		log.showFunctionName = true
 		
-        log.verbose("I can use format: %d + %d = %d", args: 1, 1, 2)
+		log.verboseWithFormat("I can use format: %d + %d = %d", args: 1, 1, 2)
     }
 }

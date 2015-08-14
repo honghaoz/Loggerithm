@@ -35,85 +35,94 @@ public struct Logarithm {
 	
 	public init() {}
 	
-	public func verbose(_ logText: String = "",
-		function: String = __FUNCTION__,
-		file: String = __FILE__,
-		line: Int = __LINE__,
-		args: CVarArgType...) -> String?
-	{
+	public func verbose(function: String = __FUNCTION__, file: String = __FILE__, line: Int = __LINE__) -> String? {
+		return verbose("", function: function, file: file,  line: line)
+	}
+	
+	public func verbose<T>(value: T, function: String = __FUNCTION__, file: String = __FILE__, line: Int = __LINE__) -> String? {
+		return verboseWithFormat("\(value)", function: function, file: file,  line: line)
+	}
+	
+	public func verboseWithFormat(_ format: String = "", function: String = __FUNCTION__, file: String = __FILE__, line: Int = __LINE__, args: CVarArgType...) -> String? {
 		if .Verbose >= logLevel {
-			return log(.Verbose, function: function, file: file,  line: line, format: logText, args: getVaList(args))
+			return log(.Verbose, function: function, file: file,  line: line, format: format, args: getVaList(args))
 		}
 		return nil
 	}
 	
-	public func info(_ logText: String = "",
-		function: String = __FUNCTION__,
-		file: String = __FILE__,
-		line: Int = __LINE__,
-		args: CVarArgType...) -> String?
+	public func info(function: String = __FUNCTION__, file: String = __FILE__, line: Int = __LINE__) -> String? {
+		return info("", function: function, file: file,  line: line)
+	}
+	
+	public func info<T>(value: T, function: String = __FUNCTION__, file: String = __FILE__, line: Int = __LINE__) -> String? {
+		return infoWithFormat("\(value)", function: function, file: file,  line: line)
+	}
+	
+	public func infoWithFormat(_ format: String = "", function: String = __FUNCTION__, file: String = __FILE__, line: Int = __LINE__, args: CVarArgType...) -> String?
 	{
 		if .Info >= logLevel {
-			return log(.Info, function: function, file: file, line: line, format: logText, args: getVaList(args))
+			return log(.Info, function: function, file: file, line: line, format: format, args: getVaList(args))
 		}
 		return nil
 	}
 	
-	public func debug(_ logText: String = "",
-		function: String = __FUNCTION__,
-		file: String = __FILE__,
-		line: Int = __LINE__,
-		args: CVarArgType...) -> String?
+	public func debug(function: String = __FUNCTION__, file: String = __FILE__, line: Int = __LINE__) -> String? {
+		return debug("", function: function, file: file,  line: line)
+	}
+	
+	public func debug<T>(value: T, function: String = __FUNCTION__, file: String = __FILE__, line: Int = __LINE__) -> String? {
+		return debugWithFormat("\(value)", function: function, file: file,  line: line)
+	}
+	
+	public func debugWithFormat(_ format: String = "", function: String = __FUNCTION__, file: String = __FILE__, line: Int = __LINE__, args: CVarArgType...) -> String?
 	{
 		if .Debug >= logLevel {
-			return log(.Debug, function: function, file: file, line: line, format: logText, args: getVaList(args))
+			return log(.Debug, function: function, file: file, line: line, format: format, args: getVaList(args))
 		}
 		return nil
 	}
 	
-	public func warning(_ logText: String = "",
-		function: String = __FUNCTION__,
-		file: String = __FILE__,
-		line: Int = __LINE__,
-		args: CVarArgType...) -> String?
+	public func warning(function: String = __FUNCTION__, file: String = __FILE__, line: Int = __LINE__) -> String? {
+		return warning("", function: function, file: file,  line: line)
+	}
+	
+	public func warning<T>(value: T, function: String = __FUNCTION__, file: String = __FILE__, line: Int = __LINE__) -> String? {
+		return warningWithFormat("\(value)", function: function, file: file,  line: line)
+	}
+	
+	public func warningWithFormat(_ format: String = "", function: String = __FUNCTION__, file: String = __FILE__, line: Int = __LINE__, args: CVarArgType...) -> String?
 	{
 		if .Warning >= logLevel {
-			return log(.Warning, function: function, file: file, line: line, format: logText, args: getVaList(args))
+			return log(.Warning, function: function, file: file, line: line, format: format, args: getVaList(args))
 		}
 		return nil
 	}
 	
-	public func error(_ logText: String = "",
-		function: String = __FUNCTION__,
-		file: String = __FILE__,
-		line: Int = __LINE__,
-		args: CVarArgType...) -> String?
+	public func error(function: String = __FUNCTION__, file: String = __FILE__, line: Int = __LINE__) -> String? {
+		return error("", function: function, file: file,  line: line)
+	}
+	
+	public func error<T>(value: T, function: String = __FUNCTION__, file: String = __FILE__, line: Int = __LINE__) -> String? {
+		return errorWithFormat("\(value)", function: function, file: file,  line: line)
+	}
+	
+	public func errorWithFormat(_ format: String = "", function: String = __FUNCTION__, file: String = __FILE__, line: Int = __LINE__, args: CVarArgType...) -> String?
 	{
 		if .Error >= logLevel {
-			return log(.Error, function: function, file: file, line: line, format: logText, args: getVaList(args))
+			return log(.Error, function: function, file: file, line: line, format: format, args: getVaList(args))
 		}
 		return nil
 	}
 	
-	public func logWithLevel(level: LogLevel,
-		_ logText: String = "",
-		function: String = __FUNCTION__,
-		file: String = __FILE__,
-		line: Int = __LINE__,
-		args: CVarArgType...) -> String?
+	public func logWithLevel(level: LogLevel, _ format: String = "", function: String = __FUNCTION__, file: String = __FILE__, line: Int = __LINE__, args: CVarArgType...) -> String?
 	{
 		if level >= logLevel {
-			return log(level, file: file, function: function, line: line, format: logText, args: getVaList(args))
+			return log(level, file: file, function: function, line: line, format: format, args: getVaList(args))
 		}
 		return nil
 	}
 	
-	private func log(level: LogLevel,
-		function: String = __FUNCTION__,
-		file: String = __FILE__,
-		line: Int = __LINE__,
-		format: String,
-		args: CVaListPointer) -> String
+	private func log(level: LogLevel, function: String = __FUNCTION__, file: String = __FILE__, line: Int = __LINE__, format: String, args: CVaListPointer) -> String
 	{
 		let dateTime = showDateTime ? (UsingNSLog ? "" : "\(dateFormatter.stringFromDate(NSDate())) ") : ""
 		let level = showLogLevel ? "[\(LogLevel.descritionForLogLevel(level))] " : ""
