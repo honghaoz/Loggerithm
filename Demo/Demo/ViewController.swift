@@ -26,6 +26,10 @@ class ViewController: UIViewController {
 		// Logger is setup in AppDelegate.swift
 		setupLocalLogger()
 		
+		// TODO: If you installed XcodeColors, comment out these two lines
+//		log.useColorfulLog = true
+//		cleanLogger.useColorfulLog = true
+		
 		// Usage example
         log.verbose("Verbose message...")
 		log.debug("Debug message...")
@@ -61,11 +65,13 @@ class ViewController: UIViewController {
 		log.verboseWithFormat("I can use format: %d + %d = %d", args: 1, 1, 2)
 		
 		// Customize Color
-		cleanLogger.emptyLine()
-		log.useColorfulLog = false
-		log.info("Color is turned off.")
-		log.useColorfulLog = true
-		log.info("Color is turned on.")
+		
+		// TODO: If you installed XcodeColors, comment out these lines
+//		cleanLogger.emptyLine()
+//		log.useColorfulLog = false
+//		log.info("Color is turned off.")
+//		log.useColorfulLog = true
+//		log.info("Color is turned on.")
 		
 		cleanLogger.emptyLine()
 		cleanLogger.info("Customizing color...")
