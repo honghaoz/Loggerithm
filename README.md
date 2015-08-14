@@ -33,6 +33,7 @@ TODO
   - Go to `Build Settings`
   - Search `Swift`
   - Under **Swift Compiler - Custom Flags** section, in **Other Swift Flags** line, add `-D DEBUG`
+
 ![](https://raw.githubusercontent.com/honghaoz/ZHSwiftLogger/master/Assets/settings.png)
 
 ## Usage
