@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "Loggerithm"
-  s.version          = "1.0"
+  s.version          = "1.1"
   s.summary          = "A lightweight Swift logger."
   s.description      = <<-DESC
                        Loggerithm - A lightweight Swift logger, uses `println` in Debug and `NSLog` in Production with colourful output.
@@ -20,12 +20,15 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/honghaoz/Loggerithm.git", :tag => s.version.to_s }
   s.social_media_url = 'https://www.linkedin.com/in/honghaozhang'
 
+  # s.platform = :ios, "8.0"
+  # s.platform = :osx, "10.9"
   s.ios.deployment_target = "8.0"
-  # s.osx.deployment_target = "10.9"
+  s.osx.deployment_target = "10.9"
   s.requires_arc     = true
 
-  s.xcconfig     = { 'OTHER_SWIFT_FLAGS' => '-D DEBUG' }
-  s.source_files = 'Source/*.swift'
-  s.frameworks = 'UIKit'
+  s.xcconfig         = { 'OTHER_SWIFT_FLAGS' => '-D DEBUG' }
+  s.source_files     = 'Source/*.swift'
+  s.ios.frameworks   = 'UIKit'
+  s.osx.frameworks   = 'Cocoa'
 
 end
