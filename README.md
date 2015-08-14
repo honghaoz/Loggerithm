@@ -162,9 +162,26 @@ log.verboseWithFormat("I can use format: %d + %d = %d", args: 1, 1, 2)
 Results:
 ![](https://raw.githubusercontent.com/honghaoz/Loggerithm/master/Assets/formatted.png)
 
-### Color Customization
+### Color Output
 
+#### Switch On/Off
+See **Installation**/**Colorful Output Support** for more detail.
 
+You can modify `useColorfulLog` to turn on/off colorful output.
+```swift
+log.useColorfulLog = false
+log.info("Color is turned off.")
+log.useColorfulLog = true
+log.info("Color is turned on.")
+```
+Note, If you don't have [XcodeColors](https://github.com/robbiehanson/XcodeColors) plugin installed but leaving `useColorfulLog` turned on, this will result it hidden color setting code to be visible:
+
+```
+[fg190,190,190;2015-08-14 16:55:34.075 [Verbose] [ViewController.swift:34] viewDidLoad(): Verbose message...[;
+[fg60,161,202;2015-08-14 16:55:34.076 [Debug] [ViewController.swift:35] viewDidLoad(): Debug message...[;
+```
+
+#### Color Customization
 ```swift
 var log = Loggerithm()
 
