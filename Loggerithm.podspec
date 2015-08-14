@@ -6,11 +6,11 @@ Pod::Spec.new do |s|
                        Loggerithm - A lightweight Swift logger, uses `println` in Debug and `NSLog` in Production with colourful output.
 
                        Features
-                       * Use `println` in Debug and `NSLog` in Production
-                       * Formatted output, just like `NSLog`
-                       * Log level Support.
-                       * Colorful output and color customization
-                       * Comprehensive Unit Test Coverage
+                       * Use `println` in Debug and `NSLog` in Production.
+                       * Formatted Output, just like `NSLog`.
+                       * Log Level Support.
+                       * Colorful Output and Color Customization.
+                       * Comprehensive Unit Test Coverage.
 
                        DESC
   s.homepage         = "https://github.com/honghaoz/Loggerithm"
