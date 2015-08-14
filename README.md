@@ -41,7 +41,7 @@ To integrate **Loggerithm** into your Xcode project using CocoaPods, specify it 
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
-pod 'Loggerithm', '~> 1.0'
+pod 'Loggerithm', '~> 1.1'
 ```
 
 Then, run the following command:
