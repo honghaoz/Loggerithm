@@ -6,7 +6,13 @@
 //  Copyright (c) 2015 HonghaoZ. All rights reserved.
 //
 
-import UIKit
+#if os(iOS)
+    import UIKit
+    public typealias Color = UIColor
+#elseif os(OSX)
+    import Cocoa
+    public typealias Color = NSColor
+#endif
 
 struct LoggerColor {
     static private let ESCAPE = "\u{001b}["
@@ -15,9 +21,9 @@ struct LoggerColor {
     static private let RESET_BG = ESCAPE + "bg;" // Clear any background color
     static private let RESET = ESCAPE + ";"   // Clear any foreground or background color
     
-    typealias Color = (r: Int, g: Int, b: Int)
+    typealias ColorTuple = (r: Int, g: Int, b: Int)
     
-    static var verboseColor: UIColor? {
+    static var verboseColor: Color? {
         didSet {
             if let verboseColor = verboseColor {
                 verboseColorTuple = colorTupleForColor(verboseColor)
@@ -27,7 +33,7 @@ struct LoggerColor {
         }
     }
     
-    static var debugColor: UIColor? {
+    static var debugColor: Color? {
         didSet {
             if let debugColor = debugColor {
                 debugColorTuple = colorTupleForColor(debugColor)
@@ -37,7 +43,7 @@ struct LoggerColor {
         }
     }
     
-    static var infoColor: UIColor? {
+    static var infoColor: Color? {
         didSet {
             if let infoColor = infoColor {
                 infoColorTuple = colorTupleForColor(infoColor)
@@ -47,7 +53,7 @@ struct LoggerColor {
         }
     }
     
-    static var warningColor: UIColor? {
+    static var warningColor: Color? {
         didSet {
             if let warningColor = warningColor {
                 warningColorTuple = colorTupleForColor(warningColor)
@@ -57,7 +63,7 @@ struct LoggerColor {
         }
     }
     
-    static var errorColor: UIColor? {
+    static var errorColor: Color? {
         didSet {
             if let errorColor = errorColor {
                 errorColorTuple = colorTupleForColor(errorColor)
@@ -67,11 +73,11 @@ struct LoggerColor {
         }
     }
     
-    static private var defaultVerboseColorTuple = Color(r: 190, g: 190, b: 190)
-    static private var defaultDebugColorTuple = Color(r: 60, g: 161, b: 202)
-    static private var defaultInfoColorTuple = Color(r: 253, g: 190, b: 10)
-    static private var defaultWarningColorTuple = Color(r: 251, g: 127, b: 8)
-    static private var defaultErrorColorTuple = Color(r: 247, g: 13, b: 23)
+    static private var defaultVerboseColorTuple = ColorTuple(r: 190, g: 190, b: 190)
+    static private var defaultDebugColorTuple = ColorTuple(r: 60, g: 161, b: 202)
+    static private var defaultInfoColorTuple = ColorTuple(r: 253, g: 190, b: 10)
+    static private var defaultWarningColorTuple = ColorTuple(r: 251, g: 127, b: 8)
+    static private var defaultErrorColorTuple = ColorTuple(r: 247, g: 13, b: 23)
     
     static private var verboseColorTuple = defaultVerboseColorTuple
     static private var debugColorTuple = defaultDebugColorTuple
@@ -84,7 +90,7 @@ struct LoggerColor {
         return "\(ESCAPE)fg\(red),\(green),\(blue);\(logString)\(RESET)"
     }
     
-    static private func rgbForLogLevel(level: LogLevel) -> Color {
+    static private func rgbForLogLevel(level: LogLevel) -> ColorTuple {
         switch level {
         case .Verbose: return verboseColorTuple
         case .Debug: return debugColorTuple
@@ -95,11 +101,11 @@ struct LoggerColor {
         }
     }
     
-    static private func colorTupleForColor(color: UIColor) -> Color {
+    static private func colorTupleForColor(color: Color) -> ColorTuple {
         var red: CGFloat = 0.0
         var green: CGFloat = 0.0
         var blue: CGFloat = 0.0
         color.getRed(&red, green: &green, blue: &blue, alpha: nil)
-        return Color(r: Int(red * 255), g: Int(green * 255), b: Int(blue * 255))
+        return ColorTuple(r: Int(red * 255), g: Int(green * 255), b: Int(blue * 255))
     }
 }

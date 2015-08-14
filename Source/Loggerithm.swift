@@ -5,7 +5,7 @@
 //  Copyright (c) 2014 HonghaoZ. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 public struct Loggerithm {
     public static let defaultLogger = Loggerithm()
@@ -18,7 +18,7 @@ public struct Loggerithm {
     public var showLineNumber = true
     public var showFunctionName = true
     
-    public var verboseColor: UIColor? {
+    public var verboseColor: Color? {
         set {
             LoggerColor.verboseColor = newValue
         }
@@ -28,7 +28,7 @@ public struct Loggerithm {
         }
     }
     
-    public var debugColor: UIColor? {
+    public var debugColor: Color? {
         set {
             LoggerColor.debugColor = newValue
         }
@@ -38,7 +38,7 @@ public struct Loggerithm {
         }
     }
     
-    public var infoColor: UIColor? {
+    public var infoColor: Color? {
         set {
             LoggerColor.infoColor = newValue
         }
@@ -48,7 +48,7 @@ public struct Loggerithm {
         }
     }
     
-    public var warningColor: UIColor? {
+    public var warningColor: Color? {
         set {
             LoggerColor.warningColor = newValue
         }
@@ -58,7 +58,7 @@ public struct Loggerithm {
         }
     }
     
-    public var errorColor: UIColor? {
+    public var errorColor: Color? {
         set {
             LoggerColor.errorColor = newValue
         }
