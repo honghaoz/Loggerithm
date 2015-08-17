@@ -120,7 +120,7 @@ Logging with level lower than `logLevel` will be ignored.
 
 ### Advanced
 
-#### Format
+#### Fields
 
 Log string containts 5 fields, format is:
 
