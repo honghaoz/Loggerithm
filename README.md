@@ -14,7 +14,7 @@ In Swift, we usually use `println` to log information into console. However, it 
 
 Thus we want to use `NSLog` in production but still want the efficiency of `println` in development. (`println` is faster than `NSLog`).
 
-This project started more than half a year ago, named [ZHSwiftLogger](https://github.com/honghaoz/ZHSwiftLogger). At that time, no other Swift loggers provide this functionality. So I developped this logger for my personal usage.
+This project started more than half a year ago, named [ZHSwiftLogger](https://github.com/honghaoz/ZHSwiftLogger). At that time, no other Swift loggers provided this functionality. So I developped this logger for my personal usage.
 
 Nowadays, we have more and more great Swift loggers. While, **Loggerithm** is lightweight, pretty straightforward and handy to use.
 
