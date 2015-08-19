@@ -336,7 +336,7 @@ public struct Loggerithm {
         
         var fileLine = ""
         if showFileName {
-            fileLine += "[" + file.lastPathComponent
+            fileLine += "[" + (file as NSString).lastPathComponent
             if showLineNumber {
                 fileLine += ":\(line)"
             }
