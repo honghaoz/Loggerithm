@@ -27,6 +27,10 @@ Nowadays, we have more and more great Swift loggers. While, **Loggerithm** is li
 
 ## Installation
 
+### Swift 2 Support
+
+The `swift-2.0` branch is updated for Swift 2. Since Xcode 7 is still in beta, you have to install `Loggerithm` manually. 
+
 ### Cocoapods
 
 [CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects.
