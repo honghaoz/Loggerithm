@@ -4,22 +4,22 @@
 [![License](https://img.shields.io/cocoapods/l/Loggerithm.svg?style=flat)](http://cocoapods.org/pods/Loggerithm)
 [![Platform](https://img.shields.io/cocoapods/p/Loggerithm.svg?style=flat)](http://cocoapods.org/pods/Loggerithm)
 
-A lightweight Swift logger, uses `println` in Debug and `NSLog` in Production with colourful output.
+A lightweight Swift logger, uses `print` in Debug and `NSLog` in Production with colourful output.
 
 ![](https://raw.githubusercontent.com/honghaoz/Loggerithm/master/Assets/demo.png)
 
 ## Why
 
-In Swift, we usually use `println` to log information into console. However, it doesn't log anything in production version. 
+In Swift, we usually use `print` to log information into console. However, it doesn't log anything in production version. 
 
-Thus we want to use `NSLog` in production but still want the efficiency of `println` in development. (`println` is faster than `NSLog`).
+Thus we want to use `NSLog` in production but still want the efficiency of `print` in development. (`print` is faster than `NSLog`).
 
 This project started more than half a year ago, named [ZHSwiftLogger](https://github.com/honghaoz/ZHSwiftLogger). At that time, no other Swift loggers provided this functionality. So I developped this logger for my personal usage.
 
 Nowadays, we have more and more great Swift loggers. While, **Loggerithm** is lightweight, pretty straightforward and handy to use.
 
 ## Features
-- [x] Use `println` in Debug and `NSLog` in Production.
+- [x] Use `print` in Debug and `NSLog` in Production.
 - [x] Formatted output, just like `NSLog`.
 - [x] Log level Support.
 - [x] Colorful output and color customization.

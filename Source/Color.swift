@@ -124,10 +124,10 @@ struct LoggerColor {
     /**
     Add color setting code for a string.
     
-    :param: logString A string
-    :param: level     A log level
+    - parameter logString: A string
+    - parameter level:     A log level
     
-    :returns: A string with color setting code inserted.
+    - returns: A string with color setting code inserted.
     */
     static func applyColorForLogString(logString: String, withLevel level: LogLevel) -> String {
         let (red, green, blue) = rgbForLogLevel(level)
@@ -137,9 +137,9 @@ struct LoggerColor {
     /**
     Get corresponding color tuple for log level.
     
-    :param: level A log level
+    - parameter level: A log level
     
-    :returns: ColorTuple instance.
+    - returns: ColorTuple instance.
     */
     static private func rgbForLogLevel(level: LogLevel) -> ColorTuple {
         switch level {
@@ -155,9 +155,9 @@ struct LoggerColor {
     /**
     Get corresponding color tuple for an UIColor/NSColor.
     
-    :param: color UIColor for iOS, NSColor for OSX
+    - parameter color: UIColor for iOS, NSColor for OSX
     
-    :returns: ColorTuple instance.
+    - returns: ColorTuple instance.
     */
     static private func colorTupleForColor(color: Color) -> ColorTuple {
         var red: CGFloat = 0.0
