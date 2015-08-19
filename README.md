@@ -1,5 +1,5 @@
 # Loggerithm
-[![CI Status](http://img.shields.io/travis/honghaoz/Loggerithm.svg?style=flat)](https://travis-ci.org/honghaoz/Loggerithm)
+[![CI Status](https://travis-ci.org/honghaoz/Loggerithm.svg?branch=master)](https://travis-ci.org/honghaoz/Loggerithm)
 [![Cocoapods Version](https://img.shields.io/cocoapods/v/Loggerithm.svg?style=flat)](http://cocoapods.org/pods/Loggerithm)
 [![License](https://img.shields.io/cocoapods/l/Loggerithm.svg?style=flat)](http://cocoapods.org/pods/Loggerithm)
 [![Platform](https://img.shields.io/cocoapods/p/Loggerithm.svg?style=flat)](http://cocoapods.org/pods/Loggerithm)
