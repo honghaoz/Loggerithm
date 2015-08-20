@@ -20,9 +20,9 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/honghaoz/Loggerithm.git", :tag => s.version.to_s }
   s.social_media_url = 'https://www.linkedin.com/in/honghaozhang'
 
-  # s.platform = :ios, "8.0"
+  # s.platform = :ios, "7.0"
   # s.platform = :osx, "10.9"
-  s.ios.deployment_target = "8.0"
+  s.ios.deployment_target = "7.0"
   s.osx.deployment_target = "10.9"
   s.requires_arc     = true
 
