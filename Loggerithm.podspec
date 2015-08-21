@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "Loggerithm"
-  s.version          = "1.2"
+  s.version          = "1.2.1"
   s.summary          = "A lightweight Swift logger."
   s.description      = <<-DESC
                        Loggerithm - A lightweight Swift logger, uses `println` in Debug and `NSLog` in Production with colourful output.
