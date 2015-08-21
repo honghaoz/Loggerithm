@@ -25,6 +25,11 @@ Nowadays, we have more and more great Swift loggers. While, **Loggerithm** is li
 - [x] Colorful output and color customization.
 - [x] Comprehensive Unit Test Coverage.
 
+## Requirements
+
+- iOS 8.0+ / Mac OS X 10.9+
+- Xcode 6.4
+
 ## Installation
 
 ### Swift 2 Support
