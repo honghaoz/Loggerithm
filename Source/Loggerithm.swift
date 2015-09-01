@@ -106,7 +106,7 @@ public struct Loggerithm {
     
     /// LogFunction used, print for DEBUG, NSLog for Production.
     #if DEBUG
-    private let LogFunction: (format: String) -> Void = print
+    private let LogFunction: (format: String) -> Void = {format in print(format)}
     private let UsingNSLog = false
     #else
     private let LogFunction: (format: String, args: CVarArgType...) -> Void = NSLog
