@@ -27,8 +27,8 @@ class ViewController: UIViewController {
 		setupLocalLogger()
 		
 		// TODO: If you installed XcodeColors, remove comments for these two lines
-//		log.useColorfulLog = true
-//		cleanLogger.useColorfulLog = true
+		log.useColorfulLog = true
+		cleanLogger.useColorfulLog = true
 		
 		// Usage example
         log.verbose("Verbose message...")

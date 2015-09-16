@@ -94,7 +94,7 @@ class DemoTests: XCTestCase {
 	// MARK: - Helper
 	func replaceSecondsAndMilliSeconds(string: String) -> String {
 		let pattern = "(\\d{2}).\\d{3}"
-		let regex = NSRegularExpression(pattern: pattern, options: nil, error: nil)!
-		return regex.stringByReplacingMatchesInString(string, options: nil, range: NSMakeRange(0, count(string)), withTemplate: "--.---")
+		let regex = try! NSRegularExpression(pattern: pattern, options: [])
+		return regex.stringByReplacingMatchesInString(string, options: [], range: NSMakeRange(0, string.characters.count), withTemplate: "--.---")
 	}
 }

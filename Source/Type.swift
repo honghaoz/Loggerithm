@@ -48,9 +48,9 @@ public enum LogLevel: Int {
     /**
     Get string description for log level.
     
-    :param: logLevel A LogLevel
+    - parameter logLevel: A LogLevel
     
-    :returns: A string.
+    - returns: A string.
     */
     static public func descritionForLogLevel(logLevel: LogLevel) -> String {
         switch logLevel {
