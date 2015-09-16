@@ -28,7 +28,7 @@ Nowadays, we have more and more great Swift loggers. While, **Loggerithm** is li
 ## Requirements
 
 - iOS 8.0+ / Mac OS X 10.9+
-- Xcode 6.4
+- Xcode 7.0
 
 ## Installation
 
@@ -42,7 +42,7 @@ To integrate **Loggerithm** into your Xcode project using CocoaPods, specify it 
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
-pod 'Loggerithm', '~> 1.2'
+pod 'Loggerithm', '~> 1.3'
 ```
 
 Then, run the following command:
