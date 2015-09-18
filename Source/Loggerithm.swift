@@ -160,7 +160,7 @@ public struct Loggerithm {
     */
     public func verbose(format: String, function: String = __FUNCTION__, file: String = __FILE__, line: Int = __LINE__, args: CVarArgType...) -> String? {
         if .Verbose >= logLevel {
-            return log(.Verbose, function: function, file: file,  line: line, format: format, args: getVaList(args))
+            return log(.Verbose, function: function, file: file,  line: line, format: format, args: args)
         }
         return nil
     }
@@ -193,7 +193,7 @@ public struct Loggerithm {
     public func debug(format: String, function: String = __FUNCTION__, file: String = __FILE__, line: Int = __LINE__, args: CVarArgType...) -> String?
     {
         if .Debug >= logLevel {
-            return log(.Debug, function: function, file: file, line: line, format: format, args: getVaList(args))
+            return log(.Debug, function: function, file: file, line: line, format: format, args: args)
         }
         return nil
     }
@@ -226,7 +226,7 @@ public struct Loggerithm {
     public func info(format: String, function: String = __FUNCTION__, file: String = __FILE__, line: Int = __LINE__, args: CVarArgType...) -> String?
     {
         if .Info >= logLevel {
-            return log(.Info, function: function, file: file, line: line, format: format, args: getVaList(args))
+            return log(.Info, function: function, file: file, line: line, format: format, args: args)
         }
         return nil
     }
@@ -259,7 +259,7 @@ public struct Loggerithm {
     public func warning(format: String, function: String = __FUNCTION__, file: String = __FILE__, line: Int = __LINE__, args: CVarArgType...) -> String?
     {
         if .Warning >= logLevel {
-            return log(.Warning, function: function, file: file, line: line, format: format, args: getVaList(args))
+            return log(.Warning, function: function, file: file, line: line, format: format, args: args)
         }
         return nil
     }
@@ -292,7 +292,7 @@ public struct Loggerithm {
     public func error(format: String, function: String = __FUNCTION__, file: String = __FILE__, line: Int = __LINE__, args: CVarArgType...) -> String?
     {
         if .Error >= logLevel {
-            return log(.Error, function: function, file: file, line: line, format: format, args: getVaList(args))
+            return log(.Error, function: function, file: file, line: line, format: format, args: args)
         }
         return nil
     }
@@ -312,7 +312,7 @@ public struct Loggerithm {
     public func logWithLevel(level: LogLevel, _ format: String = "", function: String = __FUNCTION__, file: String = __FILE__, line: Int = __LINE__, args: CVarArgType...) -> String?
     {
         if level >= logLevel {
-            return log(level, file: file, function: function, line: line, format: format, args: getVaList(args))
+            return log(level, file: file, function: function, line: line, format: format, args: args)
         }
         return nil
     }
@@ -329,7 +329,7 @@ public struct Loggerithm {
     
     - returns: The string logged out.
     */
-    private func log(level: LogLevel, function: String = __FUNCTION__, file: String = __FILE__, line: Int = __LINE__, format: String, args: CVaListPointer) -> String
+    private func log(level: LogLevel, function: String = __FUNCTION__, file: String = __FILE__, line: Int = __LINE__, format: String, args: [CVarArgType]) -> String
     {
         let dateTime = showDateTime ? (UsingNSLog ? "" : "\(dateFormatter.stringFromDate(NSDate())) ") : ""
         let levelString = showLogLevel ? "[\(LogLevel.descritionForLogLevel(level))] " : ""
@@ -345,7 +345,7 @@ public struct Loggerithm {
         
         let functionString = showFunctionName ? function : ""
         
-        let message = NSString(format: format, arguments: args) as String
+        let message = String(format: format, arguments: args)
         let infoString = "\(dateTime)\(levelString)\(fileLine)\(functionString)".stringByTrimmingCharactersInSet(NSCharacterSet(charactersInString: " "))
         
         let logString = infoString + (infoString.isEmpty ? "" : ": ") + "\(message)"
