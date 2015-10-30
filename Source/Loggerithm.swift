@@ -357,9 +357,9 @@ public struct Loggerithm {
         let logString = infoString + (infoString.isEmpty ? "" : ": ") + "\(message)"
         let outputString = useColorfulLog ? LoggerColor.applyColorForLogString(logString, withLevel: level) : logString
         
-        dispatch_async(dispatch_get_main_queue(), { () -> Void in
+//        dispatch_async(dispatch_get_main_queue(), { () -> Void in
             self.LogFunction(format: outputString)
-        })
+//        })
         
         return logString
     }
