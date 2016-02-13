@@ -1,6 +1,6 @@
 # Loggerithm
 [![CI Status](https://travis-ci.org/honghaoz/Loggerithm.svg?branch=master)](https://travis-ci.org/honghaoz/Loggerithm)
-[![Cocoapods Version](https://img.shields.io/cocoapods/v/Loggerithm.svg?style=flat)](http://cocoapods.org/pods/Loggerithm)
+[![CocoaPods Version](https://img.shields.io/cocoapods/v/Loggerithm.svg?style=flat)](http://cocoapods.org/pods/Loggerithm)
 [![License](https://img.shields.io/cocoapods/l/Loggerithm.svg?style=flat)](http://cocoapods.org/pods/Loggerithm)
 [![Platform](https://img.shields.io/cocoapods/p/Loggerithm.svg?style=flat)](http://cocoapods.org/pods/Loggerithm)
 
@@ -32,7 +32,7 @@ Nowadays, we have more and more great Swift loggers. While, **Loggerithm** is li
 
 ## Installation
 
-### Cocoapods
+### CocoaPods
 
 [CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects.
 
@@ -83,7 +83,7 @@ You can also manually force to turn on/off colorful output by modifying `useColo
 ## Usage
 
 ### Basic 
-> If you are using Cocoapods to integrate Loggerithm. Import Loggerithm first:
+> If you are using CocoaPods to integrate Loggerithm. Import Loggerithm first:
 > ```swift
 > import Loggerithm
 > ```
