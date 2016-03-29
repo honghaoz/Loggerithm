@@ -48,7 +48,7 @@ class DemoTests: XCTestCase {
 		// Processed String: 2015-08-13 16:14:--.--- [Verbose] [DemoTests.swift:26] testFullFormat(): Hello
 		// Expected String:  2015-08-13 16:14:--.--- [Verbose] [DemoTests.swift:26] testFullFormat(): Hello
 		
-		var logString = log.verbose("Hello"), lineNumber = __LINE__
+		var logString = log.verbose("Hello"), lineNumber = #line
 		logString = replaceSecondsAndMilliSeconds(logString!)
 		
 		let expectedString = "\(dateFormatter.stringFromDate(NSDate())) [Verbose] [DemoTests.swift:\(lineNumber)] testFullFormatVerbose(): Hello"
@@ -56,7 +56,7 @@ class DemoTests: XCTestCase {
     }
 	
 	func testFullFormatDebug() {
-		var logString = log.debug("Test test 123"), lineNumber = __LINE__
+		var logString = log.debug("Test test 123"), lineNumber = #line
 		logString = replaceSecondsAndMilliSeconds(logString!)
 		
 		let expectedString = "\(dateFormatter.stringFromDate(NSDate())) [Debug] [DemoTests.swift:\(lineNumber)] testFullFormatDebug(): Test test 123"
@@ -64,7 +64,7 @@ class DemoTests: XCTestCase {
 	}
 	
 	func testFullFormatInfo() {
-		var logString = log.info("Test test 123"), lineNumber = __LINE__
+		var logString = log.info("Test test 123"), lineNumber = #line
 		logString = replaceSecondsAndMilliSeconds(logString!)
 		
 		let expectedString = "\(dateFormatter.stringFromDate(NSDate())) [Info] [DemoTests.swift:\(lineNumber)] testFullFormatInfo(): Test test 123"
@@ -72,7 +72,7 @@ class DemoTests: XCTestCase {
 	}
 	
 	func testFullFormatWarning() {
-		var logString = log.warning("Test test 123"), lineNumber = __LINE__
+		var logString = log.warning("Test test 123"), lineNumber = #line
 		logString = replaceSecondsAndMilliSeconds(logString!)
 		
 		let expectedString = "\(dateFormatter.stringFromDate(NSDate())) [Warning] [DemoTests.swift:\(lineNumber)] testFullFormatWarning(): Test test 123"
@@ -80,7 +80,7 @@ class DemoTests: XCTestCase {
 	}
 	
 	func testFullFormatErrorFormated() {
-		var logString = log.error("Error String, errorCode: %d", args: -100), lineNumber = __LINE__
+		var logString = log.error("Error String, errorCode: %d", args: -100), lineNumber = #line
 		logString = replaceSecondsAndMilliSeconds(logString!)
 		
 		let expectedString = "\(dateFormatter.stringFromDate(NSDate())) [Error] [DemoTests.swift:\(lineNumber)] testFullFormatErrorFormated(): Error String, errorCode: -100"

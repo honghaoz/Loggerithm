@@ -143,7 +143,7 @@ public struct Loggerithm {
     
     - returns: The string logged out.
     */
-    public func verbose<T>(value: T, function: String = __FUNCTION__, file: String = __FILE__, line: Int = __LINE__) -> String? {
+    public func verbose<T>(value: T, function: String = #function, file: String = #file, line: Int = #line) -> String? {
         return verbose("\(value)", function: function, file: file,  line: line)
     }
     
@@ -158,7 +158,7 @@ public struct Loggerithm {
     
     - returns: The string logged out.
     */
-    public func verbose(format: String = "", function: String = __FUNCTION__, file: String = __FILE__, line: Int = __LINE__, args: CVarArgType...) -> String? {
+    public func verbose(format: String = "", function: String = #function, file: String = #file, line: Int = #line, args: CVarArgType...) -> String? {
         if .Verbose >= logLevel {
             return log(.Verbose, function: function, file: file,  line: line, format: format, args: args)
         }
@@ -175,7 +175,7 @@ public struct Loggerithm {
     
     - returns: The string logged out.
     */
-    public func debug<T>(value: T, function: String = __FUNCTION__, file: String = __FILE__, line: Int = __LINE__) -> String? {
+    public func debug<T>(value: T, function: String = #function, file: String = #file, line: Int = #line) -> String? {
         return debug("\(value)", function: function, file: file,  line: line)
     }
     
@@ -190,7 +190,7 @@ public struct Loggerithm {
     
     - returns: The string logged out.
     */
-    public func debug(format: String = "", function: String = __FUNCTION__, file: String = __FILE__, line: Int = __LINE__, args: CVarArgType...) -> String?
+    public func debug(format: String = "", function: String = #function, file: String = #file, line: Int = #line, args: CVarArgType...) -> String?
     {
         if .Debug >= logLevel {
             return log(.Debug, function: function, file: file, line: line, format: format, args: args)
@@ -208,7 +208,7 @@ public struct Loggerithm {
     
     - returns: The string logged out.
     */
-    public func info<T>(value: T, function: String = __FUNCTION__, file: String = __FILE__, line: Int = __LINE__) -> String? {
+    public func info<T>(value: T, function: String = #function, file: String = #file, line: Int = #line) -> String? {
         return info("\(value)", function: function, file: file,  line: line)
     }
     
@@ -223,7 +223,7 @@ public struct Loggerithm {
     
     - returns: The string logged out.
     */
-    public func info(format: String = "", function: String = __FUNCTION__, file: String = __FILE__, line: Int = __LINE__, args: CVarArgType...) -> String?
+    public func info(format: String = "", function: String = #function, file: String = #file, line: Int = #line, args: CVarArgType...) -> String?
     {
         if .Info >= logLevel {
             return log(.Info, function: function, file: file, line: line, format: format, args: args)
@@ -241,7 +241,7 @@ public struct Loggerithm {
     
     - returns: The string logged out.
     */
-    public func warning<T>(value: T, function: String = __FUNCTION__, file: String = __FILE__, line: Int = __LINE__) -> String? {
+    public func warning<T>(value: T, function: String = #function, file: String = #file, line: Int = #line) -> String? {
         return warning("\(value)", function: function, file: file,  line: line)
     }
     
@@ -256,7 +256,7 @@ public struct Loggerithm {
     
     - returns: The string logged out.
     */
-    public func warning(format: String = "", function: String = __FUNCTION__, file: String = __FILE__, line: Int = __LINE__, args: CVarArgType...) -> String?
+    public func warning(format: String = "", function: String = #function, file: String = #file, line: Int = #line, args: CVarArgType...) -> String?
     {
         if .Warning >= logLevel {
             return log(.Warning, function: function, file: file, line: line, format: format, args: args)
@@ -274,7 +274,7 @@ public struct Loggerithm {
     
     - returns: The string logged out.
     */
-    public func error<T>(value: T, function: String = __FUNCTION__, file: String = __FILE__, line: Int = __LINE__) -> String? {
+    public func error<T>(value: T, function: String = #function, file: String = #file, line: Int = #line) -> String? {
         return error("\(value)", function: function, file: file,  line: line)
     }
     
@@ -289,7 +289,7 @@ public struct Loggerithm {
     
     - returns: The string logged out.
     */
-    public func error(format: String = "", function: String = __FUNCTION__, file: String = __FILE__, line: Int = __LINE__, args: CVarArgType...) -> String?
+    public func error(format: String = "", function: String = #function, file: String = #file, line: Int = #line, args: CVarArgType...) -> String?
     {
         if .Error >= logLevel {
             return log(.Error, function: function, file: file, line: line, format: format, args: args)
@@ -309,7 +309,7 @@ public struct Loggerithm {
     
     - returns: The string logged out.
     */
-    public func logWithLevel(level: LogLevel, _ format: String = "", function: String = __FUNCTION__, file: String = __FILE__, line: Int = __LINE__, args: CVarArgType...) -> String?
+    public func logWithLevel(level: LogLevel, _ format: String = "", function: String = #function, file: String = #file, line: Int = #line, args: CVarArgType...) -> String?
     {
         if level >= logLevel {
             return log(level, file: file, function: function, line: line, format: format, args: args)
@@ -329,7 +329,7 @@ public struct Loggerithm {
     
     - returns: The string logged out.
     */
-    private func log(level: LogLevel, function: String = __FUNCTION__, file: String = __FILE__, line: Int = __LINE__, format: String, args: [CVarArgType]) -> String
+    private func log(level: LogLevel, function: String = #function, file: String = #file, line: Int = #line, format: String, args: [CVarArgType]) -> String
     {
         let dateTime = showDateTime ? (UsingNSLog ? "" : "\(dateFormatter.stringFromDate(NSDate())) ") : ""
         let levelString = showLogLevel ? "[\(LogLevel.descritionForLogLevel(level))] " : ""
