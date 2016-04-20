@@ -26,7 +26,8 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = "10.9"
   s.requires_arc     = true
 
-  s.xcconfig         = { 'OTHER_SWIFT_FLAGS' => '-D DEBUG' }
+  s.xcconfig         = { 'OTHER_SWIFT_FLAGS[config=Debug]' => '-D DEBUG' }
+
   s.source_files     = 'Source/*.swift'
   s.ios.frameworks   = 'UIKit'
   s.osx.frameworks   = 'Cocoa'
