@@ -179,7 +179,7 @@ log.info("Color is turned off.")
 log.useColorfulLog = true
 log.info("Color is turned on.")
 ```
-Note, If you don't have [XcodeColors](https://github.com/robbiehanson/XcodeColors) plugin installed but leaving `useColorfulLog` turned on, this will result it hidden color setting code to be visible:
+Note, If you don't have [XcodeColors](https://github.com/robbiehanson/XcodeColors) plugin installed but leaving `useColorfulLog` turned on, this will result in hidden color setting code to be visible:
 
 ```
 [fg190,190,190;2015-08-14 16:55:34.075 [Verbose] [ViewController.swift:34] viewDidLoad(): Verbose message...[;
