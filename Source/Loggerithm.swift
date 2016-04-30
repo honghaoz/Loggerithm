@@ -109,7 +109,7 @@ public struct Loggerithm {
     private let LogFunction: (format: String) -> Void = {format in print(format)}
     private let UsingNSLog = false
     #else
-    private let LogFunction: (format: String, args: CVarArg...) -> Void = NSLog
+    private let LogFunction: (format: String, args: CVarArgType...) -> Void = NSLog
     private let UsingNSLog = true
     #endif
     
