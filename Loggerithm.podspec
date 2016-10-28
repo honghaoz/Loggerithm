@@ -34,5 +34,6 @@ Pod::Spec.new do |s|
   s.osx.frameworks   = 'Cocoa'
 
   # s.xcconfig         = { 'OTHER_SWIFT_FLAGS[config=Debug]' => '-D DEBUG' }
-
+  
+  s.pushed_with_swift_version = "2.3"
 end
