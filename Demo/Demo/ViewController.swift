@@ -75,11 +75,11 @@ class ViewController: UIViewController {
 		
 		cleanLogger.emptyLine()
 		cleanLogger.info("Customizing color...")
-		log.verboseColor = UIColor.grayColor()
-		log.debugColor = UIColor.greenColor()
-		log.infoColor = UIColor.yellowColor()
-		log.warningColor = UIColor.orangeColor()
-		log.errorColor = UIColor.redColor()
+		log.verboseColor = UIColor.gray
+		log.debugColor = UIColor.green
+		log.infoColor = UIColor.yellow
+		log.warningColor = UIColor.orange
+		log.errorColor = UIColor.red
 		
 		log.verbose("Verbose message...")
 		log.debug("Debug message...")
