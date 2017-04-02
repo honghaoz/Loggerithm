@@ -6,9 +6,8 @@
 //  Copyright (c) 2014 HonghaoZ. All rights reserved.
 //
 
-import UIKit
+import Foundation
 import XCTest
-import Demo
 
 class DemoTests: XCTestCase {
 	var log = Loggerithm()

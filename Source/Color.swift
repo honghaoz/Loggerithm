@@ -23,7 +23,7 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-#if os(iOS) || os(tvOS)
+#if os(iOS) || os(watchOS) || os(tvOS)
     import UIKit
     public typealias Color = UIColor
 #elseif os(OSX)

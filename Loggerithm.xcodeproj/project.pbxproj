@@ -1,0 +1,1110 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FEDEF9E91E916C8A00C733DC /* Loggerithm.h in Headers */ = {isa = PBXBuildFile; fileRef = FEDEF9BB1E916BFC00C733DC /* Loggerithm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FEDEF9EA1E916C8A00C733DC /* Loggerithm.h in Headers */ = {isa = PBXBuildFile; fileRef = FEDEF9BB1E916BFC00C733DC /* Loggerithm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FEDEF9EB1E916C8A00C733DC /* Loggerithm.h in Headers */ = {isa = PBXBuildFile; fileRef = FEDEF9BB1E916BFC00C733DC /* Loggerithm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FEDEF9EC1E916C8B00C733DC /* Loggerithm.h in Headers */ = {isa = PBXBuildFile; fileRef = FEDEF9BB1E916BFC00C733DC /* Loggerithm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FEDEF9ED1E916CA100C733DC /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDEF9B91E916BFC00C733DC /* Color.swift */; };
+		FEDEF9EE1E916CA100C733DC /* Loggerithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDEF9BC1E916BFC00C733DC /* Loggerithm.swift */; };
+		FEDEF9EF1E916CA100C733DC /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDEF9BD1E916BFC00C733DC /* Type.swift */; };
+		FEDEF9F01E916CA100C733DC /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDEF9B91E916BFC00C733DC /* Color.swift */; };
+		FEDEF9F11E916CA100C733DC /* Loggerithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDEF9BC1E916BFC00C733DC /* Loggerithm.swift */; };
+		FEDEF9F21E916CA100C733DC /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDEF9BD1E916BFC00C733DC /* Type.swift */; };
+		FEDEF9F31E916CA100C733DC /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDEF9B91E916BFC00C733DC /* Color.swift */; };
+		FEDEF9F41E916CA100C733DC /* Loggerithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDEF9BC1E916BFC00C733DC /* Loggerithm.swift */; };
+		FEDEF9F51E916CA100C733DC /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDEF9BD1E916BFC00C733DC /* Type.swift */; };
+		FEDEF9F61E916CA100C733DC /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDEF9B91E916BFC00C733DC /* Color.swift */; };
+		FEDEF9F71E916CA100C733DC /* Loggerithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDEF9BC1E916BFC00C733DC /* Loggerithm.swift */; };
+		FEDEF9F81E916CA100C733DC /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDEF9BD1E916BFC00C733DC /* Type.swift */; };
+		FEDEFA021E916D5600C733DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDEFA011E916D5600C733DC /* AppDelegate.swift */; };
+		FEDEFA041E916D5600C733DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDEFA031E916D5600C733DC /* ViewController.swift */; };
+		FEDEFA071E916D5600C733DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEDEFA051E916D5600C733DC /* Main.storyboard */; };
+		FEDEFA091E916D5600C733DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEDEFA081E916D5600C733DC /* Assets.xcassets */; };
+		FEDEFA0C1E916D5600C733DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEDEFA0A1E916D5600C733DC /* LaunchScreen.storyboard */; };
+		FEDEFA1A1E916D8600C733DC /* Loggerithm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEDEF9AD1E916BDD00C733DC /* Loggerithm.framework */; };
+		FEDEFA291E916DA300C733DC /* Loggerithm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEDEF9D01E916C1D00C733DC /* Loggerithm.framework */; };
+		FEDEFA381E916DB200C733DC /* Loggerithm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEDEF9DD1E916C2700C733DC /* Loggerithm.framework */; };
+		FEDEFA441E916DC500C733DC /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDEFA401E916DC500C733DC /* Tests.swift */; };
+		FEDEFA451E916DC500C733DC /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDEFA401E916DC500C733DC /* Tests.swift */; };
+		FEDEFA461E916DC500C733DC /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDEFA401E916DC500C733DC /* Tests.swift */; };
+		FEDEFA471E916E2F00C733DC /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDEF9B91E916BFC00C733DC /* Color.swift */; };
+		FEDEFA481E916E2F00C733DC /* Loggerithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDEF9BC1E916BFC00C733DC /* Loggerithm.swift */; };
+		FEDEFA491E916E2F00C733DC /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDEF9BD1E916BFC00C733DC /* Type.swift */; };
+		FEDEFA4A1E916E2F00C733DC /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDEF9B91E916BFC00C733DC /* Color.swift */; };
+		FEDEFA4B1E916E2F00C733DC /* Loggerithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDEF9BC1E916BFC00C733DC /* Loggerithm.swift */; };
+		FEDEFA4C1E916E2F00C733DC /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDEF9BD1E916BFC00C733DC /* Type.swift */; };
+		FEDEFA4D1E916E3000C733DC /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDEF9B91E916BFC00C733DC /* Color.swift */; };
+		FEDEFA4E1E916E3000C733DC /* Loggerithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDEF9BC1E916BFC00C733DC /* Loggerithm.swift */; };
+		FEDEFA4F1E916E3000C733DC /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDEF9BD1E916BFC00C733DC /* Type.swift */; };
+		FEDEFA501E916E3000C733DC /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDEF9B91E916BFC00C733DC /* Color.swift */; };
+		FEDEFA511E916E3000C733DC /* Loggerithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDEF9BC1E916BFC00C733DC /* Loggerithm.swift */; };
+		FEDEFA521E916E3000C733DC /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDEF9BD1E916BFC00C733DC /* Type.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FEDEFA1B1E916D8600C733DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEDEF9A41E916BDD00C733DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEDEF9AC1E916BDD00C733DC;
+			remoteInfo = "Loggerithm iOS";
+		};
+		FEDEFA2A1E916DA300C733DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEDEF9A41E916BDD00C733DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEDEF9CF1E916C1D00C733DC;
+			remoteInfo = "Loggerithm tvOS";
+		};
+		FEDEFA391E916DB200C733DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEDEF9A41E916BDD00C733DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEDEF9DC1E916C2700C733DC;
+			remoteInfo = "Loggerithm macOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FEDEF9AD1E916BDD00C733DC /* Loggerithm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Loggerithm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEDEF9B91E916BFC00C733DC /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		FEDEF9BA1E916BFC00C733DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEDEF9BB1E916BFC00C733DC /* Loggerithm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Loggerithm.h; sourceTree = "<group>"; };
+		FEDEF9BC1E916BFC00C733DC /* Loggerithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loggerithm.swift; sourceTree = "<group>"; };
+		FEDEF9BD1E916BFC00C733DC /* Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
+		FEDEF9C31E916C1400C733DC /* Loggerithm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Loggerithm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEDEF9D01E916C1D00C733DC /* Loggerithm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Loggerithm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEDEF9DD1E916C2700C733DC /* Loggerithm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Loggerithm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEDEF9F91E916CBF00C733DC /* Loggerithm.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Loggerithm.podspec; sourceTree = "<group>"; };
+		FEDEF9FA1E916CBF00C733DC /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		FEDEF9FF1E916D5600C733DC /* iOS Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEDEFA011E916D5600C733DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FEDEFA031E916D5600C733DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FEDEFA061E916D5600C733DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FEDEFA081E916D5600C733DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FEDEFA0B1E916D5600C733DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FEDEFA0D1E916D5600C733DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEDEFA151E916D8600C733DC /* Loggerithm iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Loggerithm iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEDEFA241E916DA300C733DC /* Loggerithm tvOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Loggerithm tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEDEFA331E916DB200C733DC /* Loggerithm macOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Loggerithm macOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEDEFA3F1E916DC500C733DC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEDEFA401E916DC500C733DC /* Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FEDEF9A91E916BDD00C733DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEDEF9BF1E916C1400C733DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEDEF9CC1E916C1D00C733DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEDEF9D91E916C2700C733DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEDEF9FC1E916D5600C733DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEDEFA121E916D8600C733DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEDEFA1A1E916D8600C733DC /* Loggerithm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEDEFA211E916DA300C733DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEDEFA291E916DA300C733DC /* Loggerithm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEDEFA301E916DB200C733DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEDEFA381E916DB200C733DC /* Loggerithm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FEDEF9A31E916BDD00C733DC = {
+			isa = PBXGroup;
+			children = (
+				FEDEF9F91E916CBF00C733DC /* Loggerithm.podspec */,
+				FEDEF9FA1E916CBF00C733DC /* Package.swift */,
+				FEDEF9B81E916BFC00C733DC /* Source */,
+				FEDEFA3E1E916DC500C733DC /* Tests */,
+				FEDEFA001E916D5600C733DC /* iOS Example */,
+				FEDEF9AE1E916BDD00C733DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FEDEF9AE1E916BDD00C733DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FEDEF9AD1E916BDD00C733DC /* Loggerithm.framework */,
+				FEDEF9C31E916C1400C733DC /* Loggerithm.framework */,
+				FEDEF9D01E916C1D00C733DC /* Loggerithm.framework */,
+				FEDEF9DD1E916C2700C733DC /* Loggerithm.framework */,
+				FEDEF9FF1E916D5600C733DC /* iOS Example.app */,
+				FEDEFA151E916D8600C733DC /* Loggerithm iOS Tests.xctest */,
+				FEDEFA241E916DA300C733DC /* Loggerithm tvOS Tests.xctest */,
+				FEDEFA331E916DB200C733DC /* Loggerithm macOS Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FEDEF9B81E916BFC00C733DC /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				FEDEF9B91E916BFC00C733DC /* Color.swift */,
+				FEDEF9BA1E916BFC00C733DC /* Info.plist */,
+				FEDEF9BB1E916BFC00C733DC /* Loggerithm.h */,
+				FEDEF9BC1E916BFC00C733DC /* Loggerithm.swift */,
+				FEDEF9BD1E916BFC00C733DC /* Type.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		FEDEFA001E916D5600C733DC /* iOS Example */ = {
+			isa = PBXGroup;
+			children = (
+				FEDEFA011E916D5600C733DC /* AppDelegate.swift */,
+				FEDEFA031E916D5600C733DC /* ViewController.swift */,
+				FEDEFA051E916D5600C733DC /* Main.storyboard */,
+				FEDEFA081E916D5600C733DC /* Assets.xcassets */,
+				FEDEFA0A1E916D5600C733DC /* LaunchScreen.storyboard */,
+				FEDEFA0D1E916D5600C733DC /* Info.plist */,
+			);
+			path = "iOS Example";
+			sourceTree = "<group>";
+		};
+		FEDEFA3E1E916DC500C733DC /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				FEDEFA3F1E916DC500C733DC /* Info.plist */,
+				FEDEFA401E916DC500C733DC /* Tests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FEDEF9AA1E916BDD00C733DC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEDEF9E91E916C8A00C733DC /* Loggerithm.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEDEF9C01E916C1400C733DC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEDEF9EA1E916C8A00C733DC /* Loggerithm.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEDEF9CD1E916C1D00C733DC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEDEF9EB1E916C8A00C733DC /* Loggerithm.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEDEF9DA1E916C2700C733DC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEDEF9EC1E916C8B00C733DC /* Loggerithm.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		FEDEF9AC1E916BDD00C733DC /* Loggerithm iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEDEF9B51E916BDD00C733DC /* Build configuration list for PBXNativeTarget "Loggerithm iOS" */;
+			buildPhases = (
+				FEDEF9A81E916BDD00C733DC /* Sources */,
+				FEDEF9A91E916BDD00C733DC /* Frameworks */,
+				FEDEF9AA1E916BDD00C733DC /* Headers */,
+				FEDEF9AB1E916BDD00C733DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Loggerithm iOS";
+			productName = Loggerithm;
+			productReference = FEDEF9AD1E916BDD00C733DC /* Loggerithm.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FEDEF9C21E916C1400C733DC /* Loggerithm watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEDEF9C81E916C1400C733DC /* Build configuration list for PBXNativeTarget "Loggerithm watchOS" */;
+			buildPhases = (
+				FEDEF9BE1E916C1400C733DC /* Sources */,
+				FEDEF9BF1E916C1400C733DC /* Frameworks */,
+				FEDEF9C01E916C1400C733DC /* Headers */,
+				FEDEF9C11E916C1400C733DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Loggerithm watchOS";
+			productName = "Loggerithm watchOS";
+			productReference = FEDEF9C31E916C1400C733DC /* Loggerithm.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FEDEF9CF1E916C1D00C733DC /* Loggerithm tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEDEF9D51E916C1D00C733DC /* Build configuration list for PBXNativeTarget "Loggerithm tvOS" */;
+			buildPhases = (
+				FEDEF9CB1E916C1D00C733DC /* Sources */,
+				FEDEF9CC1E916C1D00C733DC /* Frameworks */,
+				FEDEF9CD1E916C1D00C733DC /* Headers */,
+				FEDEF9CE1E916C1D00C733DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Loggerithm tvOS";
+			productName = "Loggerithm tvOS";
+			productReference = FEDEF9D01E916C1D00C733DC /* Loggerithm.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FEDEF9DC1E916C2700C733DC /* Loggerithm macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEDEF9E21E916C2700C733DC /* Build configuration list for PBXNativeTarget "Loggerithm macOS" */;
+			buildPhases = (
+				FEDEF9D81E916C2700C733DC /* Sources */,
+				FEDEF9D91E916C2700C733DC /* Frameworks */,
+				FEDEF9DA1E916C2700C733DC /* Headers */,
+				FEDEF9DB1E916C2700C733DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Loggerithm macOS";
+			productName = "Loggerithm macOS";
+			productReference = FEDEF9DD1E916C2700C733DC /* Loggerithm.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FEDEF9FE1E916D5600C733DC /* iOS Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEDEFA0E1E916D5600C733DC /* Build configuration list for PBXNativeTarget "iOS Example" */;
+			buildPhases = (
+				FEDEF9FB1E916D5600C733DC /* Sources */,
+				FEDEF9FC1E916D5600C733DC /* Frameworks */,
+				FEDEF9FD1E916D5600C733DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS Example";
+			productName = "iOS Example";
+			productReference = FEDEF9FF1E916D5600C733DC /* iOS Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FEDEFA141E916D8600C733DC /* Loggerithm iOS Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEDEFA1D1E916D8600C733DC /* Build configuration list for PBXNativeTarget "Loggerithm iOS Tests" */;
+			buildPhases = (
+				FEDEFA111E916D8600C733DC /* Sources */,
+				FEDEFA121E916D8600C733DC /* Frameworks */,
+				FEDEFA131E916D8600C733DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FEDEFA1C1E916D8600C733DC /* PBXTargetDependency */,
+			);
+			name = "Loggerithm iOS Tests";
+			productName = "Loggerithm iOS Tests";
+			productReference = FEDEFA151E916D8600C733DC /* Loggerithm iOS Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FEDEFA231E916DA300C733DC /* Loggerithm tvOS Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEDEFA2C1E916DA300C733DC /* Build configuration list for PBXNativeTarget "Loggerithm tvOS Tests" */;
+			buildPhases = (
+				FEDEFA201E916DA300C733DC /* Sources */,
+				FEDEFA211E916DA300C733DC /* Frameworks */,
+				FEDEFA221E916DA300C733DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FEDEFA2B1E916DA300C733DC /* PBXTargetDependency */,
+			);
+			name = "Loggerithm tvOS Tests";
+			productName = "Loggerithm tvOS Tests";
+			productReference = FEDEFA241E916DA300C733DC /* Loggerithm tvOS Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FEDEFA321E916DB200C733DC /* Loggerithm macOS Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEDEFA3B1E916DB200C733DC /* Build configuration list for PBXNativeTarget "Loggerithm macOS Tests" */;
+			buildPhases = (
+				FEDEFA2F1E916DB200C733DC /* Sources */,
+				FEDEFA301E916DB200C733DC /* Frameworks */,
+				FEDEFA311E916DB200C733DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FEDEFA3A1E916DB200C733DC /* PBXTargetDependency */,
+			);
+			name = "Loggerithm macOS Tests";
+			productName = "Loggerithm macOS Tests";
+			productReference = FEDEFA331E916DB200C733DC /* Loggerithm macOS Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FEDEF9A41E916BDD00C733DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Honghao Zhang";
+				TargetAttributes = {
+					FEDEF9AC1E916BDD00C733DC = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+					};
+					FEDEF9C21E916C1400C733DC = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+					};
+					FEDEF9CF1E916C1D00C733DC = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+					};
+					FEDEF9DC1E916C2700C733DC = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+					};
+					FEDEF9FE1E916D5600C733DC = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+					};
+					FEDEFA141E916D8600C733DC = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+					};
+					FEDEFA231E916DA300C733DC = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+					};
+					FEDEFA321E916DB200C733DC = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FEDEF9A71E916BDD00C733DC /* Build configuration list for PBXProject "Loggerithm" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FEDEF9A31E916BDD00C733DC;
+			productRefGroup = FEDEF9AE1E916BDD00C733DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FEDEF9AC1E916BDD00C733DC /* Loggerithm iOS */,
+				FEDEFA141E916D8600C733DC /* Loggerithm iOS Tests */,
+				FEDEF9C21E916C1400C733DC /* Loggerithm watchOS */,
+				FEDEF9CF1E916C1D00C733DC /* Loggerithm tvOS */,
+				FEDEFA231E916DA300C733DC /* Loggerithm tvOS Tests */,
+				FEDEF9DC1E916C2700C733DC /* Loggerithm macOS */,
+				FEDEFA321E916DB200C733DC /* Loggerithm macOS Tests */,
+				FEDEF9FE1E916D5600C733DC /* iOS Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FEDEF9AB1E916BDD00C733DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEDEF9C11E916C1400C733DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEDEF9CE1E916C1D00C733DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEDEF9DB1E916C2700C733DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEDEF9FD1E916D5600C733DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEDEFA0C1E916D5600C733DC /* LaunchScreen.storyboard in Resources */,
+				FEDEFA091E916D5600C733DC /* Assets.xcassets in Resources */,
+				FEDEFA071E916D5600C733DC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEDEFA131E916D8600C733DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEDEFA221E916DA300C733DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEDEFA311E916DB200C733DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FEDEF9A81E916BDD00C733DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEDEF9ED1E916CA100C733DC /* Color.swift in Sources */,
+				FEDEF9EE1E916CA100C733DC /* Loggerithm.swift in Sources */,
+				FEDEF9EF1E916CA100C733DC /* Type.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEDEF9BE1E916C1400C733DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEDEF9F01E916CA100C733DC /* Color.swift in Sources */,
+				FEDEF9F11E916CA100C733DC /* Loggerithm.swift in Sources */,
+				FEDEF9F21E916CA100C733DC /* Type.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEDEF9CB1E916C1D00C733DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEDEF9F31E916CA100C733DC /* Color.swift in Sources */,
+				FEDEF9F41E916CA100C733DC /* Loggerithm.swift in Sources */,
+				FEDEF9F51E916CA100C733DC /* Type.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEDEF9D81E916C2700C733DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEDEF9F61E916CA100C733DC /* Color.swift in Sources */,
+				FEDEF9F71E916CA100C733DC /* Loggerithm.swift in Sources */,
+				FEDEF9F81E916CA100C733DC /* Type.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEDEF9FB1E916D5600C733DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEDEFA521E916E3000C733DC /* Type.swift in Sources */,
+				FEDEFA041E916D5600C733DC /* ViewController.swift in Sources */,
+				FEDEFA511E916E3000C733DC /* Loggerithm.swift in Sources */,
+				FEDEFA021E916D5600C733DC /* AppDelegate.swift in Sources */,
+				FEDEFA501E916E3000C733DC /* Color.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEDEFA111E916D8600C733DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEDEFA441E916DC500C733DC /* Tests.swift in Sources */,
+				FEDEFA481E916E2F00C733DC /* Loggerithm.swift in Sources */,
+				FEDEFA471E916E2F00C733DC /* Color.swift in Sources */,
+				FEDEFA491E916E2F00C733DC /* Type.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEDEFA201E916DA300C733DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEDEFA451E916DC500C733DC /* Tests.swift in Sources */,
+				FEDEFA4B1E916E2F00C733DC /* Loggerithm.swift in Sources */,
+				FEDEFA4A1E916E2F00C733DC /* Color.swift in Sources */,
+				FEDEFA4C1E916E2F00C733DC /* Type.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEDEFA2F1E916DB200C733DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEDEFA461E916DC500C733DC /* Tests.swift in Sources */,
+				FEDEFA4E1E916E3000C733DC /* Loggerithm.swift in Sources */,
+				FEDEFA4D1E916E3000C733DC /* Color.swift in Sources */,
+				FEDEFA4F1E916E3000C733DC /* Type.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FEDEFA1C1E916D8600C733DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEDEF9AC1E916BDD00C733DC /* Loggerithm iOS */;
+			targetProxy = FEDEFA1B1E916D8600C733DC /* PBXContainerItemProxy */;
+		};
+		FEDEFA2B1E916DA300C733DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEDEF9CF1E916C1D00C733DC /* Loggerithm tvOS */;
+			targetProxy = FEDEFA2A1E916DA300C733DC /* PBXContainerItemProxy */;
+		};
+		FEDEFA3A1E916DB200C733DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEDEF9DC1E916C2700C733DC /* Loggerithm macOS */;
+			targetProxy = FEDEFA391E916DB200C733DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FEDEFA051E916D5600C733DC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEDEFA061E916D5600C733DC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FEDEFA0A1E916D5600C733DC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEDEFA0B1E916D5600C733DC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FEDEF9B31E916BDD00C733DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = Loggerithm;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FEDEF9B41E916BDD00C733DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Loggerithm;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FEDEF9B61E916BDD00C733DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.honghaoz.Loggerithm;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FEDEF9B71E916BDD00C733DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.honghaoz.Loggerithm;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		FEDEF9C91E916C1400C733DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.honghaoz.Loggerithm-watchOS";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		FEDEF9CA1E916C1400C733DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.honghaoz.Loggerithm-watchOS";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		FEDEF9D61E916C1D00C733DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.honghaoz.Loggerithm-tvOS";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		FEDEF9D71E916C1D00C733DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.honghaoz.Loggerithm-tvOS";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		FEDEF9E31E916C2700C733DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.honghaoz.Loggerithm-macOS";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FEDEF9E41E916C2700C733DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.honghaoz.Loggerithm-macOS";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		FEDEFA0F1E916D5600C733DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "iOS Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-D DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.honghaoz.iOS-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FEDEFA101E916D5600C733DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "iOS Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-D DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.honghaoz.iOS-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		FEDEFA1E1E916D8600C733DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.honghaoz.Loggerithm-iOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FEDEFA1F1E916D8600C733DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.honghaoz.Loggerithm-iOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		FEDEFA2D1E916DA300C733DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.honghaoz.Loggerithm-tvOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		FEDEFA2E1E916DA300C733DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.honghaoz.Loggerithm-tvOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Release;
+		};
+		FEDEFA3C1E916DB200C733DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.honghaoz.Loggerithm-macOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FEDEFA3D1E916DB200C733DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.honghaoz.Loggerithm-macOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FEDEF9A71E916BDD00C733DC /* Build configuration list for PBXProject "Loggerithm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEDEF9B31E916BDD00C733DC /* Debug */,
+				FEDEF9B41E916BDD00C733DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEDEF9B51E916BDD00C733DC /* Build configuration list for PBXNativeTarget "Loggerithm iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEDEF9B61E916BDD00C733DC /* Debug */,
+				FEDEF9B71E916BDD00C733DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEDEF9C81E916C1400C733DC /* Build configuration list for PBXNativeTarget "Loggerithm watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEDEF9C91E916C1400C733DC /* Debug */,
+				FEDEF9CA1E916C1400C733DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FEDEF9D51E916C1D00C733DC /* Build configuration list for PBXNativeTarget "Loggerithm tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEDEF9D61E916C1D00C733DC /* Debug */,
+				FEDEF9D71E916C1D00C733DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FEDEF9E21E916C2700C733DC /* Build configuration list for PBXNativeTarget "Loggerithm macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEDEF9E31E916C2700C733DC /* Debug */,
+				FEDEF9E41E916C2700C733DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FEDEFA0E1E916D5600C733DC /* Build configuration list for PBXNativeTarget "iOS Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEDEFA0F1E916D5600C733DC /* Debug */,
+				FEDEFA101E916D5600C733DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FEDEFA1D1E916D8600C733DC /* Build configuration list for PBXNativeTarget "Loggerithm iOS Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEDEFA1E1E916D8600C733DC /* Debug */,
+				FEDEFA1F1E916D8600C733DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FEDEFA2C1E916DA300C733DC /* Build configuration list for PBXNativeTarget "Loggerithm tvOS Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEDEFA2D1E916DA300C733DC /* Debug */,
+				FEDEFA2E1E916DA300C733DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FEDEFA3B1E916DB200C733DC /* Build configuration list for PBXNativeTarget "Loggerithm macOS Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEDEFA3C1E916DB200C733DC /* Debug */,
+				FEDEFA3D1E916DB200C733DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FEDEF9A41E916BDD00C733DC /* Project object */;
+}
