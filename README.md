@@ -1,4 +1,5 @@
 # Loggerithm
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![CI Status](https://travis-ci.org/honghaoz/Loggerithm.svg?branch=master)](https://travis-ci.org/honghaoz/Loggerithm)
 [![CocoaPods Version](https://img.shields.io/cocoapods/v/Loggerithm.svg?style=flat)](http://cocoapods.org/pods/Loggerithm)
 [![License](https://img.shields.io/cocoapods/l/Loggerithm.svg?style=flat)](http://cocoapods.org/pods/Loggerithm)
@@ -49,6 +50,37 @@ Then, run the following command:
 
 ```bash
 $ pod install
+```
+
+### Carthage
+
+[Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks.
+
+You can install Carthage with [Homebrew](http://brew.sh/) using the following command:
+
+```bash
+$ brew update
+$ brew install carthage
+```
+
+To integrate Loggerithm into your Xcode project using Carthage, specify it in your `Cartfile`:
+
+```ogdl
+github "honghaoz/Loggerithm" ~> 1.4
+```
+
+Run `carthage update` to build the framework and drag the built `Loggerithm.framework` into your Xcode project.
+
+### Swift Package Manager
+
+The [Swift Package Manager](https://swift.org/package-manager/) is a tool for automating the distribution of Swift code and is integrated into the `swift` compiler. It is in early development, but Loggerithm does support its use on supported platforms. 
+
+Once you have your Swift package set up, adding Loggerithm as a dependency is as easy as adding it to the `dependencies` value of your `Package.swift`.
+
+```swift
+dependencies: [
+    .Package(url: "https://github.com/honghaoz/Loggerithm.git", majorVersion: 1)
+]
 ```
 
 ### Manually
