@@ -102,24 +102,24 @@ public struct Loggerithm {
     }
     
     /// NSDateFromatter used internally.
-    private let dateFormatter = NSDateFormatter()
+    fileprivate let dateFormatter = DateFormatter()
     
     /// LogFunction used, print for DEBUG, NSLog for Production.
     #if DEBUG
-    private let LogFunction: (format: String) -> Void = {format in print(format)}
+    private let LogFunction: (_ format: String) -> Void = {format in print(format)}
     private let UsingNSLog = false
     #else
-    private let LogFunction: (format: String, args: CVarArgType...) -> Void = NSLog
-    private let UsingNSLog = true
+    fileprivate let LogFunction: (_ format: String, _ args: CVarArg...) -> Void = NSLog
+    fileprivate let UsingNSLog = true
     #endif
     
     public init() {
-        dateFormatter.locale = NSLocale(localeIdentifier: "en_US_POSIX") //24H
+        dateFormatter.locale = Locale(identifier: "en_US_POSIX") //24H
         dateFormatter.dateFormat = "y-MM-dd HH:mm:ss.SSS"
         
         // Check to see whether XcodeColors is installed and enabled
         // useColorfulLog will be turned on when environment variable "XcodeColors" == "YES"
-        if let xcodeColorsEnabled = NSProcessInfo().environment["XcodeColors"] as String? where xcodeColorsEnabled == "YES" {
+        if let xcodeColorsEnabled = ProcessInfo().environment["XcodeColors"] as String?, xcodeColorsEnabled == "YES" {
             useColorfulLog = true
         }
     }
@@ -128,8 +128,8 @@ public struct Loggerithm {
     Prinln an new line, without any fileds. This will ignore any filed settings.
     */
     public func emptyLine() {
-        dispatch_async(dispatch_get_main_queue(), { () -> Void in
-            self.LogFunction(format: "")
+        DispatchQueue.main.async(execute: { () -> Void in
+            self.LogFunction("")
         })
     }
     
@@ -143,7 +143,7 @@ public struct Loggerithm {
     
     - returns: The string logged out.
     */
-    public func verbose<T>(value: T, function: String = #function, file: String = #file, line: Int = #line) -> String? {
+    @discardableResult public func verbose<T>(_ value: T, function: String = #function, file: String = #file, line: Int = #line) -> String? {
         return verbose("\(value)", function: function, file: file,  line: line)
     }
     
@@ -158,9 +158,9 @@ public struct Loggerithm {
     
     - returns: The string logged out.
     */
-    public func verbose(format: String = "", function: String = #function, file: String = #file, line: Int = #line, args: CVarArgType...) -> String? {
-        if .Verbose >= logLevel {
-            return log(.Verbose, function: function, file: file,  line: line, format: format, args: args)
+    @discardableResult public func verbose(_ format: String = "", function: String = #function, file: String = #file, line: Int = #line, args: CVarArg...) -> String? {
+        if .verbose >= logLevel {
+            return log(.verbose, function: function, file: file,  line: line, format: format, args: args)
         }
         return nil
     }
@@ -175,7 +175,7 @@ public struct Loggerithm {
     
     - returns: The string logged out.
     */
-    public func debug<T>(value: T, function: String = #function, file: String = #file, line: Int = #line) -> String? {
+    @discardableResult public func debug<T>(_ value: T, function: String = #function, file: String = #file, line: Int = #line) -> String? {
         return debug("\(value)", function: function, file: file,  line: line)
     }
     
@@ -190,10 +190,10 @@ public struct Loggerithm {
     
     - returns: The string logged out.
     */
-    public func debug(format: String = "", function: String = #function, file: String = #file, line: Int = #line, args: CVarArgType...) -> String?
+    @discardableResult public func debug(_ format: String = "", function: String = #function, file: String = #file, line: Int = #line, args: CVarArg...) -> String?
     {
-        if .Debug >= logLevel {
-            return log(.Debug, function: function, file: file, line: line, format: format, args: args)
+        if .debug >= logLevel {
+            return log(.debug, function: function, file: file, line: line, format: format, args: args)
         }
         return nil
     }
@@ -208,7 +208,7 @@ public struct Loggerithm {
     
     - returns: The string logged out.
     */
-    public func info<T>(value: T, function: String = #function, file: String = #file, line: Int = #line) -> String? {
+    @discardableResult public func info<T>(_ value: T, function: String = #function, file: String = #file, line: Int = #line) -> String? {
         return info("\(value)", function: function, file: file,  line: line)
     }
     
@@ -223,10 +223,10 @@ public struct Loggerithm {
     
     - returns: The string logged out.
     */
-    public func info(format: String = "", function: String = #function, file: String = #file, line: Int = #line, args: CVarArgType...) -> String?
+    @discardableResult public func info(_ format: String = "", function: String = #function, file: String = #file, line: Int = #line, args: CVarArg...) -> String?
     {
-        if .Info >= logLevel {
-            return log(.Info, function: function, file: file, line: line, format: format, args: args)
+        if .info >= logLevel {
+            return log(.info, function: function, file: file, line: line, format: format, args: args)
         }
         return nil
     }
@@ -241,7 +241,7 @@ public struct Loggerithm {
     
     - returns: The string logged out.
     */
-    public func warning<T>(value: T, function: String = #function, file: String = #file, line: Int = #line) -> String? {
+    @discardableResult public func warning<T>(_ value: T, function: String = #function, file: String = #file, line: Int = #line) -> String? {
         return warning("\(value)", function: function, file: file,  line: line)
     }
     
@@ -256,10 +256,10 @@ public struct Loggerithm {
     
     - returns: The string logged out.
     */
-    public func warning(format: String = "", function: String = #function, file: String = #file, line: Int = #line, args: CVarArgType...) -> String?
+    @discardableResult public func warning(_ format: String = "", function: String = #function, file: String = #file, line: Int = #line, args: CVarArg...) -> String?
     {
-        if .Warning >= logLevel {
-            return log(.Warning, function: function, file: file, line: line, format: format, args: args)
+        if .warning >= logLevel {
+            return log(.warning, function: function, file: file, line: line, format: format, args: args)
         }
         return nil
     }
@@ -274,7 +274,7 @@ public struct Loggerithm {
     
     - returns: The string logged out.
     */
-    public func error<T>(value: T, function: String = #function, file: String = #file, line: Int = #line) -> String? {
+    @discardableResult public func error<T>(_ value: T, function: String = #function, file: String = #file, line: Int = #line) -> String? {
         return error("\(value)", function: function, file: file,  line: line)
     }
     
@@ -289,10 +289,10 @@ public struct Loggerithm {
     
     - returns: The string logged out.
     */
-    public func error(format: String = "", function: String = #function, file: String = #file, line: Int = #line, args: CVarArgType...) -> String?
+    @discardableResult public func error(_ format: String = "", function: String = #function, file: String = #file, line: Int = #line, args: CVarArg...) -> String?
     {
-        if .Error >= logLevel {
-            return log(.Error, function: function, file: file, line: line, format: format, args: args)
+        if .error >= logLevel {
+            return log(.error, function: function, file: file, line: line, format: format, args: args)
         }
         return nil
     }
@@ -309,10 +309,10 @@ public struct Loggerithm {
     
     - returns: The string logged out.
     */
-    public func logWithLevel(level: LogLevel, _ format: String = "", function: String = #function, file: String = #file, line: Int = #line, args: CVarArgType...) -> String?
+    @discardableResult public func logWithLevel(_ level: LogLevel, _ format: String = "", function: String = #function, file: String = #file, line: Int = #line, args: CVarArg...) -> String?
     {
         if level >= logLevel {
-            return log(level, file: file, function: function, line: line, format: format, args: args)
+            return log(level, function: function, file: file, line: line, format: format, args: args)
         }
         return nil
     }
@@ -329,9 +329,9 @@ public struct Loggerithm {
     
     - returns: The string logged out.
     */
-    private func log(level: LogLevel, function: String = #function, file: String = #file, line: Int = #line, format: String, args: [CVarArgType]) -> String
+    @discardableResult fileprivate func log(_ level: LogLevel, function: String = #function, file: String = #file, line: Int = #line, format: String, args: [CVarArg]) -> String
     {
-        let dateTime = showDateTime ? (UsingNSLog ? "" : "\(dateFormatter.stringFromDate(NSDate())) ") : ""
+        let dateTime = showDateTime ? (UsingNSLog ? "" : "\(dateFormatter.string(from: Date())) ") : ""
         let levelString = showLogLevel ? "[\(LogLevel.descritionForLogLevel(level))] " : ""
         
         var fileLine = ""
@@ -352,13 +352,13 @@ public struct Loggerithm {
             message = String(format: format, arguments: args)
         }
         
-        let infoString = "\(dateTime)\(levelString)\(fileLine)\(functionString)".stringByTrimmingCharactersInSet(NSCharacterSet(charactersInString: " "))
+        let infoString = "\(dateTime)\(levelString)\(fileLine)\(functionString)".trimmingCharacters(in: CharacterSet(charactersIn: " "))
         
         let logString = infoString + (infoString.isEmpty ? "" : ": ") + "\(message)"
         let outputString = useColorfulLog ? LoggerColor.applyColorForLogString(logString, withLevel: level) : logString
         
 //        dispatch_async(dispatch_get_main_queue(), { () -> Void in
-            self.LogFunction(format: outputString)
+            self.LogFunction(outputString)
 //        })
         
         return logString

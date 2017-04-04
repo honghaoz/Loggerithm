@@ -6,20 +6,19 @@
 //  Copyright (c) 2014 HonghaoZ. All rights reserved.
 //
 
-import UIKit
+import Foundation
 import XCTest
-import Demo
 
 class DemoTests: XCTestCase {
 	var log = Loggerithm()
-	let dateFormatter = NSDateFormatter()
+	let dateFormatter = DateFormatter()
 	
     override func setUp() {
         super.setUp()
-		dateFormatter.locale = NSLocale(localeIdentifier: "en_US_POSIX") //24H
+		dateFormatter.locale = Locale(identifier: "en_US_POSIX") //24H
 		dateFormatter.dateFormat = "y-MM-dd HH:mm:--.---"
 		
-		log.logLevel = .All
+		log.logLevel = .all
 		log.showDateTime = true
 		log.showLogLevel = true
 		log.showFileName = true
@@ -34,11 +33,11 @@ class DemoTests: XCTestCase {
 	
 	func testDefaultLogLevel() {
 		// -D DEBUG is setup, expect .All
-		XCTAssertEqual(LogLevel.defaultLevel, LogLevel.All)
+		XCTAssertEqual(LogLevel.defaultLevel, LogLevel.all)
 	}
 	
 	func testLogIsOff() {
-		log.logLevel = .Off
+		log.logLevel = .off
 		let logString: String? = log.verbose("Hello")
 		XCTAssertNil(logString)
 	}
@@ -51,7 +50,7 @@ class DemoTests: XCTestCase {
 		var logString = log.verbose("Hello"), lineNumber = #line
 		logString = replaceSecondsAndMilliSeconds(logString!)
 		
-		let expectedString = "\(dateFormatter.stringFromDate(NSDate())) [Verbose] [DemoTests.swift:\(lineNumber)] testFullFormatVerbose(): Hello"
+		let expectedString = "\(dateFormatter.string(from: Date())) [Verbose] [DemoTests.swift:\(lineNumber)] testFullFormatVerbose(): Hello"
         XCTAssertEqual(logString!, expectedString)
     }
 	
@@ -59,7 +58,7 @@ class DemoTests: XCTestCase {
 		var logString = log.debug("Test test 123"), lineNumber = #line
 		logString = replaceSecondsAndMilliSeconds(logString!)
 		
-		let expectedString = "\(dateFormatter.stringFromDate(NSDate())) [Debug] [DemoTests.swift:\(lineNumber)] testFullFormatDebug(): Test test 123"
+		let expectedString = "\(dateFormatter.string(from: Date())) [Debug] [DemoTests.swift:\(lineNumber)] testFullFormatDebug(): Test test 123"
 		XCTAssertEqual(logString!, expectedString)
 	}
 	
@@ -67,7 +66,7 @@ class DemoTests: XCTestCase {
 		var logString = log.info("Test test 123"), lineNumber = #line
 		logString = replaceSecondsAndMilliSeconds(logString!)
 		
-		let expectedString = "\(dateFormatter.stringFromDate(NSDate())) [Info] [DemoTests.swift:\(lineNumber)] testFullFormatInfo(): Test test 123"
+		let expectedString = "\(dateFormatter.string(from: Date())) [Info] [DemoTests.swift:\(lineNumber)] testFullFormatInfo(): Test test 123"
 		XCTAssertEqual(logString!, expectedString)
 	}
 	
@@ -75,7 +74,7 @@ class DemoTests: XCTestCase {
 		var logString = log.warning("Test test 123"), lineNumber = #line
 		logString = replaceSecondsAndMilliSeconds(logString!)
 		
-		let expectedString = "\(dateFormatter.stringFromDate(NSDate())) [Warning] [DemoTests.swift:\(lineNumber)] testFullFormatWarning(): Test test 123"
+		let expectedString = "\(dateFormatter.string(from: Date())) [Warning] [DemoTests.swift:\(lineNumber)] testFullFormatWarning(): Test test 123"
 		XCTAssertEqual(logString!, expectedString)
 	}
 	
@@ -83,7 +82,7 @@ class DemoTests: XCTestCase {
 		var logString = log.error("Error String, errorCode: %d", args: -100), lineNumber = #line
 		logString = replaceSecondsAndMilliSeconds(logString!)
 		
-		let expectedString = "\(dateFormatter.stringFromDate(NSDate())) [Error] [DemoTests.swift:\(lineNumber)] testFullFormatErrorFormated(): Error String, errorCode: -100"
+		let expectedString = "\(dateFormatter.string(from: Date())) [Error] [DemoTests.swift:\(lineNumber)] testFullFormatErrorFormated(): Error String, errorCode: -100"
 		XCTAssertEqual(logString!, expectedString)
 	}
 	
@@ -92,9 +91,9 @@ class DemoTests: XCTestCase {
 	}
 	
 	// MARK: - Helper
-	func replaceSecondsAndMilliSeconds(string: String) -> String {
+	func replaceSecondsAndMilliSeconds(_ string: String) -> String {
 		let pattern = "(\\d{2}).\\d{3}"
 		let regex = try! NSRegularExpression(pattern: pattern, options: [])
-		return regex.stringByReplacingMatchesInString(string, options: [], range: NSMakeRange(0, string.characters.count), withTemplate: "--.---")
+		return regex.stringByReplacingMatches(in: string, options: [], range: NSMakeRange(0, string.characters.count), withTemplate: "--.---")
 	}
 }

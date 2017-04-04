@@ -25,5 +25,6 @@
 import PackageDescription
 
 let package = Package(
-  name: "Loggerithm"
+  name: "Loggerithm",
+  exclude: ["Tests"]
 )

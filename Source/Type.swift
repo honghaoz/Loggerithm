@@ -37,13 +37,13 @@ Log level used in Loggerithm logger.
 - Off:     Log is turned off
 */
 public enum LogLevel: Int {
-    case All        = 0
-    case Verbose    = 1
-    case Debug      = 2
-    case Info       = 3
-    case Warning    = 4
-    case Error      = 5
-    case Off        = 6
+    case all        = 0
+    case verbose    = 1
+    case debug      = 2
+    case info       = 3
+    case warning    = 4
+    case error      = 5
+    case off        = 6
     
     /**
     Get string description for log level.
@@ -52,13 +52,13 @@ public enum LogLevel: Int {
     
     - returns: A string.
     */
-    static public func descritionForLogLevel(logLevel: LogLevel) -> String {
+    static public func descritionForLogLevel(_ logLevel: LogLevel) -> String {
         switch logLevel {
-        case .Verbose: return "Verbose"
-        case .Debug:   return "Debug"
-        case .Info:    return "Info"
-        case .Warning: return "Warning"
-        case .Error:   return "Error"
+        case .verbose: return "Verbose"
+        case .debug:   return "Debug"
+        case .info:    return "Info"
+        case .warning: return "Warning"
+        case .error:   return "Error"
         default: assertionFailure("Invalid level")
         return "Null"
         }
@@ -68,9 +68,9 @@ public enum LogLevel: Int {
     /// Be sure to set the "DEBUG" symbol.
     /// Set it in the "Swift Compiler - Custom Flags" section, "Other Swift Flags" line. Add "-D DEBUG" entry.
     #if DEBUG
-    static public let defaultLevel = LogLevel.All
+    static public let defaultLevel = LogLevel.all
     #else
-    static public let defaultLevel = LogLevel.Warning
+    static public let defaultLevel = LogLevel.warning
     #endif
 }
 
