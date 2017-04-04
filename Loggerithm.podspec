@@ -3,10 +3,10 @@ Pod::Spec.new do |s|
   s.version          = "1.4.0"
   s.summary          = "A lightweight Swift logger."
   s.description      = <<-DESC
-                       Loggerithm - A lightweight Swift logger, uses `println` in Debug and `NSLog` in Production with colourful output.
+                       Loggerithm - A lightweight Swift logger, uses `print` in Debug and `NSLog` in Production with colourful output.
 
                        Features
-                       * Use `println` in Debug and `NSLog` in Production.
+                       * Use `print` in Debug and `NSLog` in Production.
                        * Formatted Output, just like `NSLog`.
                        * Log Level Support.
                        * Colorful Output and Color Customization.

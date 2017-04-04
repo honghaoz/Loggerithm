@@ -1055,6 +1055,7 @@
 				FEDEF9CA1E916C1400C733DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FEDEF9D51E916C1D00C733DC /* Build configuration list for PBXNativeTarget "Loggerithm tvOS" */ = {
 			isa = XCConfigurationList;
@@ -1063,6 +1064,7 @@
 				FEDEF9D71E916C1D00C733DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FEDEF9E21E916C2700C733DC /* Build configuration list for PBXNativeTarget "Loggerithm macOS" */ = {
 			isa = XCConfigurationList;
@@ -1071,6 +1073,7 @@
 				FEDEF9E41E916C2700C733DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FEDEFA0E1E916D5600C733DC /* Build configuration list for PBXNativeTarget "iOS Example" */ = {
 			isa = XCConfigurationList;
@@ -1079,6 +1082,7 @@
 				FEDEFA101E916D5600C733DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FEDEFA1D1E916D8600C733DC /* Build configuration list for PBXNativeTarget "Loggerithm iOS Tests" */ = {
 			isa = XCConfigurationList;
@@ -1087,6 +1091,7 @@
 				FEDEFA1F1E916D8600C733DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FEDEFA2C1E916DA300C733DC /* Build configuration list for PBXNativeTarget "Loggerithm tvOS Tests" */ = {
 			isa = XCConfigurationList;
@@ -1095,6 +1100,7 @@
 				FEDEFA2E1E916DA300C733DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FEDEFA3B1E916DB200C733DC /* Build configuration list for PBXNativeTarget "Loggerithm macOS Tests" */ = {
 			isa = XCConfigurationList;
@@ -1103,6 +1109,7 @@
 				FEDEFA3D1E916DB200C733DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
