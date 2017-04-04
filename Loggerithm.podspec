@@ -18,7 +18,6 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { "Honghao Zhang" => "zhh358@gmail.com" }
   s.source           = { :git => "https://github.com/honghaoz/Loggerithm.git", :tag => s.version.to_s }
-  s.social_media_url = 'https://www.linkedin.com/in/honghaozhang'
 
   s.ios.deployment_target = "8.0"
   s.osx.deployment_target = "10.9"
