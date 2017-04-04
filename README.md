@@ -1,7 +1,7 @@
 # Loggerithm
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![CI Status](https://travis-ci.org/honghaoz/Loggerithm.svg?branch=master)](https://travis-ci.org/honghaoz/Loggerithm)
 [![CocoaPods Version](https://img.shields.io/cocoapods/v/Loggerithm.svg?style=flat)](http://cocoapods.org/pods/Loggerithm)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](https://img.shields.io/cocoapods/l/Loggerithm.svg?style=flat)](http://cocoapods.org/pods/Loggerithm)
 [![Platform](https://img.shields.io/cocoapods/p/Loggerithm.svg?style=flat)](http://cocoapods.org/pods/Loggerithm)
 
@@ -43,7 +43,7 @@ To integrate **Loggerithm** into your Xcode project using CocoaPods, specify it 
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
-pod 'Loggerithm', '~> 1.3'
+pod 'Loggerithm', '~> 1.4'
 ```
 
 Then, run the following command:
@@ -237,10 +237,6 @@ log.error("Error message...")
 
 Results:
 ![](https://raw.githubusercontent.com/honghaoz/Loggerithm/master/Assets/color.png)
-
-## TODO
-
-- [ ] Log into file
 
 ## The MIT License (MIT)
 The MIT License (MIT)
