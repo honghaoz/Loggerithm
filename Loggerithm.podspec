@@ -29,6 +29,4 @@ Pod::Spec.new do |s|
   s.source_files     = 'Source/*.swift'
   s.ios.frameworks   = 'UIKit'
   s.osx.frameworks   = 'Cocoa'
-
-  # s.xcconfig         = { 'OTHER_SWIFT_FLAGS[config=Debug]' => '-D DEBUG' }
 end

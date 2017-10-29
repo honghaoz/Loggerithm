@@ -11,7 +11,7 @@ A lightweight Swift logger, uses `print` in Debug and `NSLog` in Production with
 
 ## Why
 
-In Swift, we usually use `print` to log information into console. However, it doesn't log anything in production version. 
+In Swift, we usually use `print` to log information into console. However, it doesn't log anything in production version.
 
 Thus we want to use `NSLog` in production but still want the efficiency of `print` in development. (`print` is faster than `NSLog`).
 
@@ -43,7 +43,7 @@ To integrate **Loggerithm** into your Xcode project using CocoaPods, specify it 
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
-pod 'Loggerithm', '~> 1.4'
+pod 'Loggerithm', '~> 1.5'
 ```
 
 Then, run the following command:
@@ -66,14 +66,14 @@ $ brew install carthage
 To integrate Loggerithm into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "honghaoz/Loggerithm" ~> 1.4
+github "honghaoz/Loggerithm" ~> 1.5
 ```
 
 Run `carthage update` to build the framework and drag the built `Loggerithm.framework` into your Xcode project.
 
 ### Swift Package Manager
 
-The [Swift Package Manager](https://swift.org/package-manager/) is a tool for automating the distribution of Swift code and is integrated into the `swift` compiler. It is in early development, but Loggerithm does support its use on supported platforms. 
+The [Swift Package Manager](https://swift.org/package-manager/) is a tool for automating the distribution of Swift code and is integrated into the `swift` compiler. It is in early development, but Loggerithm does support its use on supported platforms.
 
 Once you have your Swift package set up, adding Loggerithm as a dependency is as easy as adding it to the `dependencies` value of your `Package.swift`.
 
@@ -114,7 +114,7 @@ You can also manually force to turn on/off colorful output by modifying `useColo
 
 ## Usage
 
-### Basic 
+### Basic
 > If you are using CocoaPods to integrate Loggerithm. Import Loggerithm first:
 > ```swift
 > import Loggerithm
@@ -138,18 +138,18 @@ Results:
 
 By default, `logLevel` is `.Verbose` for development and `.Warning` for Production.
 
-`LogLevel` from low to high is 
+`LogLevel` from low to high is
 > `.All`
 >
-> `.Verbose` 
+> `.Verbose`
 >
-> `.Debug` 
+> `.Debug`
 >
-> `.Info` 
+> `.Info`
 >
-> `.Warning` 
+> `.Warning`
 >
-> `.Error` 
+> `.Error`
 >
 > `.Off`
 

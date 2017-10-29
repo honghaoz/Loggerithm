@@ -1,6 +1,6 @@
 //
-//  DemoTests.swift
-//  DemoTests
+//  Tests.swift
+//  Tests
 //
 //  Created by Honghao Zhang on 2014-12-10.
 //  Copyright (c) 2014 HonghaoZ. All rights reserved.
@@ -9,7 +9,7 @@
 import Foundation
 import XCTest
 
-class DemoTests: XCTestCase {
+class Tests: XCTestCase {
 	var log = Loggerithm()
 	let dateFormatter = DateFormatter()
 	
@@ -43,14 +43,14 @@ class DemoTests: XCTestCase {
 	}
 	
     func testFullFormatVerbose() {
-		// Original String:  2015-08-13 16:14:30.996 [Verbose] [DemoTests.swift:26] testFullFormat(): Hello
-		// Processed String: 2015-08-13 16:14:--.--- [Verbose] [DemoTests.swift:26] testFullFormat(): Hello
-		// Expected String:  2015-08-13 16:14:--.--- [Verbose] [DemoTests.swift:26] testFullFormat(): Hello
+		// Original String:  2015-08-13 16:14:30.996 [Verbose] [Tests.swift:26] testFullFormat(): Hello
+		// Processed String: 2015-08-13 16:14:--.--- [Verbose] [Tests.swift:26] testFullFormat(): Hello
+		// Expected String:  2015-08-13 16:14:--.--- [Verbose] [Tests.swift:26] testFullFormat(): Hello
 		
 		var logString = log.verbose("Hello"), lineNumber = #line
 		logString = replaceSecondsAndMilliSeconds(logString!)
 		
-		let expectedString = "\(dateFormatter.string(from: Date())) [Verbose] [DemoTests.swift:\(lineNumber)] testFullFormatVerbose(): Hello"
+		let expectedString = "\(dateFormatter.string(from: Date())) [Verbose] [Tests.swift:\(lineNumber)] testFullFormatVerbose(): Hello"
         XCTAssertEqual(logString!, expectedString)
     }
 	
@@ -58,7 +58,7 @@ class DemoTests: XCTestCase {
 		var logString = log.debug("Test test 123"), lineNumber = #line
 		logString = replaceSecondsAndMilliSeconds(logString!)
 		
-		let expectedString = "\(dateFormatter.string(from: Date())) [Debug] [DemoTests.swift:\(lineNumber)] testFullFormatDebug(): Test test 123"
+		let expectedString = "\(dateFormatter.string(from: Date())) [Debug] [Tests.swift:\(lineNumber)] testFullFormatDebug(): Test test 123"
 		XCTAssertEqual(logString!, expectedString)
 	}
 	
@@ -66,7 +66,7 @@ class DemoTests: XCTestCase {
 		var logString = log.info("Test test 123"), lineNumber = #line
 		logString = replaceSecondsAndMilliSeconds(logString!)
 		
-		let expectedString = "\(dateFormatter.string(from: Date())) [Info] [DemoTests.swift:\(lineNumber)] testFullFormatInfo(): Test test 123"
+		let expectedString = "\(dateFormatter.string(from: Date())) [Info] [Tests.swift:\(lineNumber)] testFullFormatInfo(): Test test 123"
 		XCTAssertEqual(logString!, expectedString)
 	}
 	
@@ -74,7 +74,7 @@ class DemoTests: XCTestCase {
 		var logString = log.warning("Test test 123"), lineNumber = #line
 		logString = replaceSecondsAndMilliSeconds(logString!)
 		
-		let expectedString = "\(dateFormatter.string(from: Date())) [Warning] [DemoTests.swift:\(lineNumber)] testFullFormatWarning(): Test test 123"
+		let expectedString = "\(dateFormatter.string(from: Date())) [Warning] [Tests.swift:\(lineNumber)] testFullFormatWarning(): Test test 123"
 		XCTAssertEqual(logString!, expectedString)
 	}
 	
@@ -82,7 +82,7 @@ class DemoTests: XCTestCase {
 		var logString = log.error("Error String, errorCode: %d", args: -100), lineNumber = #line
 		logString = replaceSecondsAndMilliSeconds(logString!)
 		
-		let expectedString = "\(dateFormatter.string(from: Date())) [Error] [DemoTests.swift:\(lineNumber)] testFullFormatErrorFormated(): Error String, errorCode: -100"
+		let expectedString = "\(dateFormatter.string(from: Date())) [Error] [Tests.swift:\(lineNumber)] testFullFormatErrorFormated(): Error String, errorCode: -100"
 		XCTAssertEqual(logString!, expectedString)
 	}
 	
